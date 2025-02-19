@@ -1,0 +1,79 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "17265468227a6194e8": {
+      "type": "apps",
+      "blocks": {
+        "specialized_vertical_app_form_block_TtmwHK": {
+          "type": "shopify://apps/specialized-vertical-app/blocks/form-block/22803da0-45d6-44c2-9b40-f90318bd303b",
+          "settings": {
+            "colour": "#ff0000"
+          }
+        }
+      },
+      "block_order": [
+        "specialized_vertical_app_form_block_TtmwHK"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17271624742ed57c31": {
+      "type": "apps",
+      "blocks": {
+        "s_store_locator_storeify_storelocator_abxnkV": {
+          "type": "shopify://apps/s-store-locator/blocks/storeify-storelocator/e7003487-cc51-4321-9488-2c47c07a5b17",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "s_store_locator_storeify_storelocator_abxnkV"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "17265468227a6194e8",
+    "17271624742ed57c31"
+  ]
+}

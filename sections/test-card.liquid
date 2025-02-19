@@ -1,0 +1,121 @@
+<div class="test_Card">
+{% assign collection = collections[section.settings.coll] %}
+  {% for product in collection.products limit:2 %}
+  <div class="block_row">
+  <img width="" height="" src="{{ product.featured_image | img_url:'400x' }}">
+  <p>{{ product.title}}</p>
+  <p>{{ product.price | money }}</p>
+  <p>{{ product.compare_at_price | money }}</p>
+  </div>
+    <div class="quick-view" data-handle="{{ product.handle }}">
+      Quick View
+    </div>
+  {% endfor %}
+</div>
+
+
+<div id="quick-view-modal" style="display:none;">
+    <div class="quick-view-content">
+        <span class="close">&times;</span>
+        <div class="product-details">
+            <img id="quick-view-image" src="" alt="">
+            <h2 id="quick-view-title"></h2>
+            <p id="quick-view-price"></p>
+            <div id="quick-view-description"></div>
+            <button id="quick-view-add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $('.close').on('click', function(){
+        $('#quick-view-modal').fadeOut();
+    });
+
+    $('.quick-view').on('click', function(e){
+        e.preventDefault();
+        
+        var productHandle = $(this).data('handle');
+
+        $.ajax({
+            url: '/products/' + productHandle + '.js',
+            method: 'GET',
+            dataType: 'json',
+            success: function(product){
+                // Populate the modal with product details
+                $('#quick-view-image').attr('src', product.images[0]);
+                $('#quick-view-title').text(product.title);
+                $('#quick-view-price').text(product.price);
+                $('#quick-view-description').html(product.description);
+                $('#quick-view-add-to-cart').attr('data-id', product.variants[0].id);
+
+                // Show the modal
+                $('#quick-view-modal').fadeIn();
+            },
+            error: function(){
+                alert('Product could not be loaded.');
+            }
+        });
+    });
+
+</script>
+{% schema %}
+  {
+    "name": "test card",
+    "settings": [
+    {
+      "type": "collection",
+      "id": "coll",
+      "label": "Choose Collections"
+    }
+    ],
+  "presets": [
+  {
+    "name":"Test Card"
+  }
+  ]
+  }
+{% endschema %}
+
+<style>
+  .block_row img {
+    width: 400px;
+}
+  .quick-view {
+    width: 300px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+#quick-view-modal {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.quick-view-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+</style>

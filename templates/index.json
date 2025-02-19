@@ -1,0 +1,159 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "customer_added_BaaXKd": {
+      "type": "customer-added",
+      "disabled": true,
+      "settings": {}
+    },
+    "test_card_DMXh8y": {
+      "type": "test-card",
+      "disabled": true,
+      "settings": {
+        "coll": "automated-collection"
+      }
+    },
+    "form_test_rRrDaL": {
+      "type": "form-test",
+      "disabled": true,
+      "settings": {}
+    },
+    "172647967771a7db49": {
+      "type": "apps",
+      "blocks": {
+        "specialized_vertical_app_star_rating_iAr77G": {
+          "type": "shopify://apps/specialized-vertical-app/blocks/star_rating/22803da0-45d6-44c2-9b40-f90318bd303b",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "colour": "#ff0000"
+          }
+        },
+        "specialized_vertical_app_form_block_QrPQaf": {
+          "type": "shopify://apps/specialized-vertical-app/blocks/form-block/22803da0-45d6-44c2-9b40-f90318bd303b",
+          "settings": {
+            "colour": "#ff0000"
+          }
+        }
+      },
+      "block_order": [
+        "specialized_vertical_app_star_rating_iAr77G",
+        "specialized_vertical_app_form_block_QrPQaf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1727089171191013d1": {
+      "type": "apps",
+      "blocks": {
+        "pareto_quantity_breaks_app_block_RyhTcx": {
+          "type": "shopify://apps/pareto-quantity-breaks/blocks/app-block/170ada5d-6ed5-4d40-b93c-1aa195de1ccc",
+          "settings": {}
+        },
+        "pareto_quantity_breaks_app_block_home_9HrfAB": {
+          "type": "shopify://apps/pareto-quantity-breaks/blocks/app-block-home/170ada5d-6ed5-4d40-b93c-1aa195de1ccc",
+          "settings": {
+            "product": ""
+          }
+        },
+        "pareto_quantity_breaks_order_block_cart_6WjB3L": {
+          "type": "shopify://apps/pareto-quantity-breaks/blocks/order-block-cart/170ada5d-6ed5-4d40-b93c-1aa195de1ccc",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "pareto_quantity_breaks_app_block_RyhTcx",
+        "pareto_quantity_breaks_app_block_home_9HrfAB",
+        "pareto_quantity_breaks_order_block_cart_6WjB3L"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "customer_added_BaaXKd",
+    "test_card_DMXh8y",
+    "form_test_rRrDaL",
+    "172647967771a7db49",
+    "1727089171191013d1"
+  ]
+}
