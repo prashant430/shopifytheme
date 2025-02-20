@@ -1,0 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "video_BNP3cH": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/7JQg7TI1_R0",
+        "cover_image": "shopify://shop_images/Battery_Charger.png",
+        "description": "How to Test and Tag a Battery Charger",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_HFrtfQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<p>For testing and tagging a battery charger, it’s important to remember that the 240V side of the battery charger must be tested. However, the battery itself doesn't need to be tested as it's an extra low voltage item (ELV) - not exceeding 50 V a.c.</p>\n<p>As battery chargers are double insulated appliances, <strong>using a stainless steel mesh to cover the item is considered best practice</strong> (aluminium foil will also work). All that’s required is to clip the return lead to the mesh.</p>\n<p>In this scenario, you would perform a Leakage Current Test, which will basically energise the charger.</p>\n<p>If you don’t have an earthing cloak, you can perform an Insulation Resistance Test instead. If you do choose this option, you’ll have to probe any metal screws as a touch point.</p>\n<h3>Main points to remember:</h3>\n<ul>\n<li>It's best practice to use an earthing cloak for battery chargers while performing a Leakage Current test</li>\n<li>If you don't have an earthing cloak, aluminium foil can be used as an alternative</li>\n<li>The battery doesn't need to be tested as it's considered extra low voltage</li>\n<li>You can perform an Insulation Resistance test instead</li>  \n</ul>\n<table class=\"prev-next\">\n<tbody>\n<tr>\n<td><a href=\"/pages/test-tag-tv\">&lt;&lt; How to Test and Tag a TV</a></td>\n<td class=\"right\"><a href=\"/pages/test-tag-iron\">Testing and Tagging an Iron &gt;&gt;</a></td>\n</tr>\n</tbody>\n</table>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_BNP3cH",
+    "custom_liquid_HFrtfQ"
+  ]
+}

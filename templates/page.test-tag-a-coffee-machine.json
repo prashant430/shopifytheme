@@ -1,0 +1,43 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_HYBgXX": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<p><img class=\"no-border\" loading=\"lazy\" height=\"474\" width=\"710\" alt=\"Testing & Tagging a Coffee Machine\" src=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/coffee_machine_photo_480x480.jpg?v=1715304477\"></p>\n<em data-mce-fragment=\"1\">Pod Coffee machine connected to a Delta PAT Tester</em></p>\n<p><strong>A question that we get asked a lot is – “How to test and tag a coffee machine”. And though the process is mainly straightforward, not all coffee machines are all that simple. A case in point is the Nespresso and Aldi pod machines, which can be tricky to test. Why? Well, the earthing point crucial for testing is often hidden under layers of plastic. Here in this article, we will be looking at ways to test and tag such coffee machines.</strong></p>\n<p>Typically, with Class 1 equipment you'd perform an <a href=\"https://ttt-au.myshopify.com/pages/test-and-tag-glossary\"> earth continuity test</a>. But with the earthing point concealed, that's not an option. So the workaround is to conduct a class 2 leakage test as most tests will fail trying to find the earth bond during a class one test. Testing a pod coffee machine is similar to <a href=\"https://ttt-au.myshopify.com/pages/test-tag-vacuum-cleaner\"> testing a vacuum cleaner</a> because both are encapsulated earth appliances. Hence, the preferred option is the leakage current test, which offers a higher chance of detecting a fault.</p>\n<h3>Conducting Leakage Testing:</h3>\n<p>Leakage testing matters significantly because it serves as an important safety measure. Electric shock is a serious safety concern, especially in environments where electrical appliances are used daily. Even small amounts of leakage can pose a risk of electric shock to users. By conducting leakage tests, you can quickly identify if any current is escaping from the appliance and address potential hazards before they escalate.</p>\n<p>Regular testing and tagging including leakage testing, show your commitment to compliance and safety standards. It also helps protect your business from potential liabilities associated with electrical accidents. Therefore, it is essential to prioritise regular testing and tagging of electrical appliances to ensure safety and compliance. </p>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_QiBKbP": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<img src=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/coffee_machine_photo_2.jpg?v=1715307844\" class=\"no-border\" loading=\"lazy\" height=\"475\" width=\"710\" alt=\"Leakage Test on a Coffee Mahine\">\n<em data-mce-fragment=\"1\">Conducting a Class 2 Leakage Test on an encapsulated Coffee machine</em>\n<h3>The Testing Process:\n</h3>\n<p>Now, let's look at the testing process itself. Before you start testing any electrical appliance, the first step always is to conduct a thorough <a href=\"https://ttt-au.myshopify.com/pages/test-tag-visual-inspection-checklist\"> visual inspection </a> to check for any visible damage, loose connections, or signs of wear. Next, if the earthing point is inaccessible, perform a Class 2 leakage test following these steps:</p>\n<style>\n  /* Add spacing between list items */\n  ul {\n    list-style-type: none; /* Remove default list styles */\n    padding-left: 0; /* Remove default left padding */\n  }\n  li {\n    margin-bottom: 10px; /* Adjust the spacing as needed */\n  }\n</style>\n<ul>\n<li>Power up the coffee machine and let it run for the duration of the test</li>\n<li>Use a portable appliance tester to measure leakage current.</li>\n<li>Ensure that the return lead of the tester is connected to a metal component, such as a screw in the case or underneath the machine to obtain accurate readings.</li>\n</ul>\n<p>Once testing is complete, don't forget to tag the appliance. Attach a durable test tag indicating the test date and the name of the tester. Proper tagging serves as a visual indicator that the appliance has been tested and deemed safe for use.</p>\n<p>In conclusion, testing and tagging coffee machines in workplaces is an essential practice for maintaining electrical safety. By understanding the importance of leakage testing, conducting thorough inspections, and following proper testing procedures, you can ensure the safety of yourself and all the others. If you have any doubts or need assistance, feel free to contact us at 1300 848 302. Our team is here to help!</p>\n<table class=\"prev-next\">\n<tbody>\n<tr>\n<td><a href=\"/pages/test-tag-vacuum-cleaner\">&lt;&lt; How to Test and Tag a Vacuum Cleaner</a></td>\n<td class=\"right\"><a href=\"/pages/test-tag-3-phase-appliance\">Test and Tag a 3 Phase Appliance &gt;&gt;</a></td>\n</tr>\n</tbody>\n</table>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_HYBgXX",
+    "custom_liquid_QiBKbP"
+  ]
+}

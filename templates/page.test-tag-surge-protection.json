@@ -1,0 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "video_BNP3cH": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/olYi9Y_nUmU",
+        "cover_image": "shopify://shop_images/test-tag-surge-protection-device-video-cover.jpg",
+        "description": "How to Test and Tag a Surge Protection Device",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_HFrtfQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<h3>In order to successfully test and tag a surge protected device, you’ll need to have both an understanding of how your tester functions and the knowledge of how surge protection works.</h3>\n<p>Specifically, surge protected power boards contain MOV’s (Metal Oxide Varistors) and/or EMI filtering (Electro Magnetic Interference), which are designed to protect any surge of voltage damaging sensitive electronic equipment. They are usually identifiable from the words ‘Surge Protected’ or lightning bolt image.</p>\n<p>What does this mean exactly? It means the test you’ll perform will be slightly different based on the type of tester you use and if it contains an MOV or EMI.</p>\n<table class=\"grey-white\">\n<tr class=\"grey\">\n<td><strong>Item</strong></td>\n<td><strong>Test</strong></td>\n<td><strong>Alternative Test</strong></td>\n</tr> \t \t \t\n<tr>\n<td><strong>MOV</strong></td>\n<td>Earth Bond, Polarity and Insulation Resistance @ 250V</td>\n<td>Leakage Test</td>\n</tr> \t \t\n<tr class=\"grey\">\n<td><strong>MOV &amp; EMI Filtering</strong></td>\n<td>Earth Bond, Polarity and may require Leakage Test</td>\n<td></td>\n</tr> \t \t\n</table>\n<p>MOV’s require an Earth Bond, Insulation Resistance and Polarity test to be performed. However, if we were to test an MOV the standard way, you’ll notice that the Insulation Resistance test will fail. This is because the insulation resistance test @ 500V DC may cause the MOV to react and suppress the voltage surge / spike, causing the appliance tester to fail the test.</p>\n<p>It is for this reason that testers such as the Metrel and Wavecom range will need the Insulation Resistance test to be set at 250V. Remember that each socket of the power board will still need be tested individually.</p>\n<p>For testers that are unable to adjust the Insulation resistance test down to 250V (e.g. Seaward testers), you will need to perform an Earth Leakage test instead.</p>\n<p>Some brands will require power to be supplied in order for the surge protection to work (e.g. Arlec), as these particular surge boards will still pass both a 250V and 500V Insulation Resistance test.</p>\n<h3>\"It’s worth mentioning that some surge protected power boards, such as the Thor range, will have both MOV and EMI filtering.\"</h3>\n<p>This means that the Insulation test @ 250V will fail. In this scenario, you’ll need to perform a Class I Leakage test, regardless of the tester you’re using.</p>\n<p>There is unfortunately no way of identifying a surge protected power board with EMI filtering, other than having on-the-job experience of knowing which models typically fall into this category.</p>\n<table class=\"prev-next\">\n<tbody>\n<tr>\n<td><a href=\"/pages/test-tag-extension-lead\">&lt;&lt; How to Test & Tag an Extension Lead</a></td>\n<td class=\"right\"><a href=\"/pages/test-tag-usb-charger\">How to Test and Tag a USB Charger &gt;&gt;</a></td>\n</tr>\n</tbody>\n</table>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_BNP3cH",
+    "custom_liquid_HFrtfQ"
+  ]
+}

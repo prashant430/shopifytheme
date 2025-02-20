@@ -1,0 +1,145 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 16
+      }
+    },
+    "collapsible_content_yeyHV3": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_cCntK4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "National",
+            "icon": "none",
+            "row_content": "<p><strong>Standards Australia</strong><br/>Level 10, The Exchange Centre<br/>20 Bridge Street, Sydney<br/>GPO Box 476<br/>Sydney NSW 2001<br/>Phone: 1800 035 822<br/><strong><br/>Safework Australia</strong><br/>220 Northbourne Ave<br/>Braddon, ACT 2612<br/>Phone: (02) 6121 5317</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_RmbXVC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Victoria",
+            "icon": "none",
+            "row_content": "<p>Victorian WorkCover Authority<br/>Head Office<br/>Ground Floor<br/>222 Exhibition Street<br/>Melbourne 3000<br/>Phone: (03) 9641 1555</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_E84NRe": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "New South Wales",
+            "icon": "none",
+            "row_content": "<p><strong>SafeWork NSW</strong><br/>92-100 Donnison Street<br/>GOSFORD 2250<br/>Phone: 13 10 50<br/>Phone: (02) 4321 5000</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CkWDtr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Queensland",
+            "icon": "none",
+            "row_content": "<p><strong>Electrical Safety Office</strong><br/>Phone: 1300 362 128</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BjnGDg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Western Australia",
+            "icon": "none",
+            "row_content": "<p><strong>WorkSafe </strong><br/>Phone: 1300 30 78 77<br/><strong>Worksafe Western Australia Commission</strong><br/>Phone: 1300 13 62 37</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_TFJBdz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Australian Capital Territory",
+            "icon": "none",
+            "row_content": "<p><strong>ACT Planning and Land Authority (ACTPLA)</strong><br/>Ground Floor South<br/>Dame Pattie Menzies House<br/>16 Challis Street<br/>Dickson ACT 2602<br/>Phone: (02) 6207 1923<br/><br/><strong>Health & Safety | WorkSafe ACT</strong><br/>255 Canberra Avenue<br/>Fyshwick ACT 2609<br/>Phone: (02) 6207 3000<br/><br/><strong>The Commonwealth Occupational Health and Safety Jurisdiction (Comcare)</strong><br/>Canberra Office (ACT OHS Unit)<br/>Level 4 (Reception)<br/>14 Moore Street<br/>Canberra ACT 2600<br/>Phone: 1300 366 979</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_eA3Yqn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "South Australia",
+            "icon": "none",
+            "row_content": "<p><strong>SafeWork SA</strong><br/>Level 4, World Park A<br/>33 Richmond Rd, Keswick<br/>Phone: 8303 0400<br/>Help Centre: 1300 365 255</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gjCeaq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Tasmania",
+            "icon": "none",
+            "row_content": "<p><strong>Workplace Standards Tasmania</strong><br/>PO Box 56, Rosny Park, 7018<br/>Phone: 1300 366 322 (Inside Tasmania)<br/>Phone: (03) 6166 4600 (Outside Tasmania)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_x9Wrap": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Northern Territory",
+            "icon": "none",
+            "row_content": "<p><strong>WorkSafe NT</strong><br/>GPO Box 1722 Darwin NT 0801<br/>Phone: 1800 019 115</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LrWyRw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "New Zealand",
+            "icon": "none",
+            "row_content": "<p><strong>Energy Safety Services</strong><br/>86 Custom house Quay, Wellington, New Zealand<br/>Phone : 0800 030 040 (NZ only)<br/>Phone : +64-3-962 6248 (International)<br/></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_cCntK4",
+        "collapsible_row_RmbXVC",
+        "collapsible_row_E84NRe",
+        "collapsible_row_CkWDtr",
+        "collapsible_row_BjnGDg",
+        "collapsible_row_TFJBdz",
+        "collapsible_row_eA3Yqn",
+        "collapsible_row_gjCeaq",
+        "collapsible_row_x9Wrap",
+        "collapsible_row_LrWyRw"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_yeyHV3"
+  ]
+}

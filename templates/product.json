@@ -1,0 +1,394 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "custom_liquid_FhGjiM": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"small\"><img src=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/NRT-rowl.png?v=1708044072\" class=\"no-border\" style=\"float: right; margin-left: 20px;\" alt=\"Registered Training Organisation\" width=\"100\" height=\"120\" loading=\"lazy\">This Online Test & Tag Course will teach you how to properly test and tag according to Australian Standards AS/NZS 3760. Our training is the only Nationally Recognised Test & Tag Course in Australia that is solely taught online via a face-to-face virtual classroom.</p>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "first_option_button": true
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "custom_liquid_nFRW8q": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"question\">\n\t<img src=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/iinfo-con.jpg?v=1706063788\" alt=\"\" width=\"20\" height=\"20\" loading=\"lazy\">Have a question? Call <a href=\"tel:1300848302\">1300 848 302</a> or <a href=\"mailto:enquiries@testandtagtraining.com.au\">email us</a>\n</p>"
+          }
+        },
+        "collapsible_tab_AN6y99": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "About Nationally Recognised Course",
+            "icon": "star",
+            "content": "",
+            "page": "nationally-recognised-face-to-face-course"
+          }
+        },
+        "collapsible_tab_t9AL73": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "About Short Course (Non-Accredited)",
+            "icon": "check_mark",
+            "content": "<p>The Short Course meets the minimum requirements set by AS/NZS 3760 and still allows you to freely test and tag as you wish. Although it also involves learning the same information, it has some minor differences:</p><ul><li>No OHS component</li><li>Issued with Certificate of Attendance</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_RUBEc8": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Course Detail",
+            "icon": "clipboard",
+            "content": "<p>Our online course is a fully immersive and interactive experience. The training is accessed through our easy-to-use online learning platform, and it contains exactly the same information and resources as our face-to-face course. </p><p>The theory and WHS aspect of training includes interactive videos, information and assessments (approx 3-4 hours in total), while the practical component will be <br/>performed via a live video stream with our instructor in our virtual classroom (accessed by Zoom), which is 1 full day (8-9 hours expected).</p><p>Please note that the Australian Standard AS/NZS 3760:2022 changed in 2022, and our training course is now teaching the updated Standard.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_aUKp3U": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Why Use Us",
+            "icon": "question_mark",
+            "content": "<ul><li>We have conducted training for over 35,000 satisfied students</li><li>Our Nationally Recognised Course is of the highest industry standard</li><li>We are a Registered Training Organisation (RTO: 40604)</li><li>Real time online classroom learning with trainers are industry professionals and fully qualified</li><li>Interactive and immersive online learning platform</li><li>Test items specific to you or your job, from the comfort of your home or workplace</li><li>Unlimited access to our platform and learning materials </li><li>Upskill yourself anytime that suits you - no waiting for course dates or spots to become available </li><li>Lifetime access to support from our test and tag experts after your course</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_PLAMRG": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Our Guarantee",
+            "icon": "lightning_bolt",
+            "content": "<p>If you are not completely satisfied with our online course at any time, we'll switch you to our face-to-face version free of charge.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_N8idyn": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "About Nationally Recognised Course",
+            "icon": "none",
+            "content": "",
+            "page": "nationally-recognised-face-to-face-course"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "custom_liquid_FhGjiM",
+        "description",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share",
+        "custom_liquid_nFRW8q",
+        "collapsible_tab_AN6y99",
+        "collapsible_tab_t9AL73",
+        "collapsible_tab_RUBEc8",
+        "collapsible_tab_aUKp3U",
+        "collapsible_tab_PLAMRG",
+        "collapsible_tab_N8idyn"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "custom_liquid_HAKjKM": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\">\n<!-- TrustBox widget - Carousel -->\n<div class=\"trustpilot-widget\" data-locale=\"en-AU\" data-template-id=\"53aa8912dec7e10d38f59f36\" data-businessunit-id=\"56bab5e20000ff000588b9fa\" data-style-height=\"140px\" data-style-width=\"100%\" data-stars=\"4,5\" data-review-languages=\"en\">\n  <a href=\"https://au.trustpilot.com/review/testandtagtraining.com.au\" target=\"_blank\" rel=\"noopener\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget -->\n</div>",
+        "color_scheme": "",
+        "padding_top": 52,
+        "padding_bottom": 20
+      }
+    },
+    "custom_liquid_kQTReH": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"page-width  page-width--narrow\">\n<h2>How Our Online Tests &amp Tag Course Works</h2>\n<p>The course uses our state-of-the-art and interactive online training module and is conducted by one of our experienced test and tag trainers.</p>\n<h3>Our online course process is structured from start to finish</h3>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/online-test-tag-course-process.jpg?v=1706675264\" alt=\"Online Tests &amp Tag Course Process\" width=\"100%\" height=\"auto\" loading=\"lazy\">\n<p>There's two parts of this online course that need to be completed. Initially, you will be sent login details from us which will give you access to the online learning platform. From there, you will complete all the theory learning and assessments. This is made up of multiple-choice questions, and interactive quizzes.</p>\n<p>Then for the practical assessment component, you will be guided by our expert trainer via video link. They will instruct you on how to operate the PAT tester, and ask you to perform a variety of tests and record results.</p>\n<p>If you are successful in passing both components, you will deemed a ‘Competent Person’ and we will issue you a certificate and identification number to allow you start testing and tagging.\n<p>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_kaVTH9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow-1\">\n<h2>Our Online Test & Tag Course Journey</h2>\n<h3>Our Online Training processes will guarantee you're supported every step of the way.</h3>\n<ul class=\"green-white\">\n<li>\n<img src=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/online_module.png?v=1731293180\" alt=\"Online Test &amp; Tag Training Australia\" width=\"60\" height=\"60\" loading=\"lazy\">\n<span>Complete an Online Learning Module</span>\nThis part of the course is done via state-of-the-art videos, animations and other reading material. \n</li>\n<li>\n<img src=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/virtual_class.png?v=1731293241\" alt=\"Hands-on test and tag training over a Zoom video conference\" width=\"60\" height=\"60\" loading=\"lazy\">\n<span>Attend Our Virtual Classroom</span>\nOur trainers will demonstrate hands-on test and tag training over a Zoom video conference.\n</li>\n<li>\n<img src=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/certificate_25e96b02-8e2f-4caf-9d2b-2db752719c87.png?v=1731293302\" alt=\"Get Certified\" width=\"60\" height=\"60\" loading=\"lazy\">\n<span>You Are Now Certified </span>\nOnce completed, you'll receive an ID card with a personalised number.\n</li>\n<li class=\"green\">\n<img src=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/support_e3b064d2-d5db-40d5-acef-0ea227859add.png?v=1728035275\" alt=\"Lifetime Support\" width=\"60\" height=\"60\" loading=\"lazy\">\n<span>Lifetime Support</span>\nUnlimited support regarding anything test and tag related from our team of experts.\n</li>\n</ul>\n</div>",
+        "color_scheme": "",
+        "padding_top": 24,
+        "padding_bottom": 52
+      }
+    },
+    "video_Gbj9np": {
+      "type": "video",
+      "settings": {
+        "heading": "Virtual Classroom - Hands-on Online Learning",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/ATy_0DzG-7A?rel=0",
+        "cover_image": "shopify://shop_images/online-test-tag-course-video-1_8d883f62-5018-4406-8849-bbb2a973f8f7.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_aAkj64": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width  page-width--narrow\">\n<h2>Portable Appliance Testers (PAT Testers)</h2>\n<p><strong>It is essential that students have access to their own Portable Appliance Tester to use for the online course.</strong></p>\n<p>But don’t worry if you haven’t got your own <a href=\"https://www.portableappliancetesters.com.au/\">PAT Tester</a> yet – our team is ready to take you through all the brands and models available on the Australian market, and help you choose a machine that suits your needs.</p>\n</div>",
+        "color_scheme": "",
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_aqyrc4": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_jP3dUU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does the Online Test and Tag Course work? ",
+            "icon": "none",
+            "row_content": "<p>Our Online Test & Tag Course contains the same exact content as our face-to-face training. One of the differences is that the first part of the course is self-paced and will teach you theoretical knowledge, all achieved via videos, animations and reading material. Then, the main feature of this course is learning how to test and tag via our Virtual Classroom (zoom video conference). This is conducted by an experienced trainer, and all students are given help the entire way.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9amYtn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How is the Nationally Recognised course different to the Short course? ",
+            "icon": "none",
+            "row_content": "<p>Both the Nationally Recognised and Short Courses are delivered in a face-to-face training session over 1 day. However, the major difference between them is that the Nationally Recognised Course has an additional self-paced OHS (Occupational Health and Safety) online component and is thereby considered the highest qualification (ASQA approved). The course you decide on will largely depend on your particular needs, but most students will complete the Nationally Recognised one for <a href=\"/pages/choosing-right-course\" title=\"Which Test & Tag Course Should I Choose?\">various reasons</a>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_YAFc4k": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does the course go for? ",
+            "icon": "none",
+            "row_content": "<p>The Online Test & Tag Course is more self-paced when compared to traditional classroom training, but we find that most of our students require approximately 6-7 hours to complete the course. The theory part (Work Health and Safety section) of the training is self-paced, and we find that most students allocate about 3-4 hours for this. The practical session is more structured as it is led by our instructor and will take around 8 hours. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_DhYd67": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Who will be the instructor  on the day? ",
+            "icon": "none",
+            "row_content": "<p>We have several trainers, all of which are test and tag industry professionals with many years of experience and are fully qualified. In addition, they’re all very friendly and approachable and will make the training an enjoyable experience. Whatever your reason for doing the course is, we guarantee our trainers will give you all the knowledge and skills required to successfully test and tag.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wgai4y": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if I need technical support or help after the course? ",
+            "icon": "none",
+            "row_content": "<p>You’ll have the peace of mind knowing that we'll be there when you need us, whether it's by phone, email or in person. Every single student taught by Test & Tag Training receives free lifetime technical support from our team of experts. Guaranteed. This could be anything from how to use a specific appliance tester or how to test and tag a particular electrical appliance. We want to ensure we're making people's jobs easier by offering dependable service and expert advice when you need it most.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_jP3dUU",
+        "collapsible_row_9amYtn",
+        "collapsible_row_YAFc4k",
+        "collapsible_row_DhYd67",
+        "collapsible_row_wgai4y"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_TqEKYi": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_X6WUqn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/face_to_face_test_and_tag_course_a2eb27d0-d305-47f4-818c-184c008183eb.png",
+            "title": "",
+            "text": "<h4>Face-to-Face Test & Tag Course</h4><p>From $361.90</p>",
+            "link_label": "View Course",
+            "link": "https://www.testandtagtraining.com.au/products/face-to-face-test-tag-course",
+            "button_text_color_4": "#58a618",
+            "button_text_4": ""
+          }
+        },
+        "column_ViEGBr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/refreshener-test-and-tag-course-home.jpg",
+            "title": "",
+            "text": "<h4>Online Refresher Course</h4><p>$104.50</p>",
+            "link_label": "View Course",
+            "link": "shopify://products/online-refresher-course",
+            "button_text_color_4": "#58a618",
+            "button_text_4": ""
+          }
+        },
+        "column_CFkYM3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3-phase-course-small.jpg",
+            "title": "",
+            "text": "<h4>3 Phase Test & Tag Course</h4><p>$198.00</p>",
+            "link_label": "View Course",
+            "link": "shopify://products/3-phase-test-tag-course",
+            "button_text_color_4": "#58a618",
+            "button_text_4": ""
+          }
+        },
+        "column_iFXwh8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/plug-top-replacement-small.jpg",
+            "title": "",
+            "text": "<h4>Plug Top Replacement Course</h4><p>$198.00</p>",
+            "link_label": "View Course",
+            "link": "shopify://products/plug-top-replacement-course",
+            "button_text_color_4": "#58a618",
+            "button_text_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_X6WUqn",
+        "column_ViEGBr",
+        "column_CFkYM3",
+        "column_iFXwh8"
+      ],
+      "settings": {
+        "title": "You may also like",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "map_url_4": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22480.24191528294!2d-122.41941533333334!3d37.77492949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807f7b606e5d%3A0x64bf9bcb39065fb3!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1647347969693!5m2!1sen!2sus",
+        "map_url_5": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22480.24191528294!2d-122.41941533333334!3d37.77492949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807f7b606e5d%3A0x64bf9bcb39065fb3!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1647347969693!5m2!1sen!2sus"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_HAKjKM",
+    "custom_liquid_kQTReH",
+    "custom_liquid_kaVTH9",
+    "video_Gbj9np",
+    "custom_liquid_aAkj64",
+    "collapsible_content_aqyrc4",
+    "related-products",
+    "multicolumn_TqEKYi"
+  ]
+}

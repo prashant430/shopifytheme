@@ -1,0 +1,389 @@
+{% comment %}
+  Renders product variant-picker
+
+  Accepts:
+  - product: {Object} product object.
+  - block: {Object} passing the block information.
+  - product_form_id: {String} Id of the product form to which the variant picker is associated.
+  - update_url: {Boolean} whether or not to update url when changing variants. If false, the url isn't updated. Default: true (optional).
+  Usage:
+  {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+{% endcomment %}
+{%- unless product.has_only_default_variant -%}
+  {%- if block.settings.picker_type == 'button' -%}
+    <variant-radios
+      id="variant-radios-{{ section.id }}"
+      class="no-js-hidden"
+      data-section="{{ section.id }}"
+      data-url="{{ product.url }}"
+      {% if update_url == false %}
+        data-update-url="false"
+      {% endif %}
+      {{ block.shopify_attributes }}
+    >
+      {%- for option in product.options_with_values -%}
+        <fieldset class="js product-form__input">
+          <legend class="form__label">{{ option.name }}</legend>
+          {% render 'product-variant-options', product: product, option: option, block: block %}
+        </fieldset>
+      {%- endfor -%}
+      <script type="application/json">
+        {{ product.variants | json }}
+      </script>
+    </variant-radios>
+  {%- else -%}
+    {%- for option in product.options_with_values -%}
+        {% comment %}{% if block.settings.first_option_button and option.position == 1 %}{% endcomment %}
+        {% if product.tags contains 'option1-pills' and option.position == 1 %}          
+          <div class="product-form__input">
+            <legend class="form__label">{{ option.name }}</legend>
+            <div class="selectinline">
+            {% render 'product-variant-options2', product: product, option: option, block: block %}
+            </div>
+          </div>
+        {% endif %}
+    {%- endfor -%}
+    
+    <variant-selects
+      id="variant-selects-{{ section.id }}"
+      class="no-js-hidden selectinline"
+      data-section="{{ section.id }}"
+      data-url="{{ product.url }}"
+      {% if update_url == false %}
+        data-update-url="false"
+      {% endif %}
+      {{ block.shopify_attributes }}
+    >
+      {%- for option in product.options_with_values -%}
+        {% comment %}{% if block.settings.first_option_button and option.position == 1 %}{% endcomment %}
+        {% if product.tags contains 'option1-pills' and option.position == 1 %}
+          
+          <div class="product-form__input product-form__input--dropdown hidden">
+            <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
+              {{ option.name }}
+            </label>
+          {% assign opttt = option.name | downcase %}
+          <span class="optttt" style="display:none">{{ opttt }}</span>
+          {% if opttt contains 'date' or opttt contains 'dates' %}
+            <select 
+                id="Option-my-side"
+                class="select__select_my" style="display:none;"
+              >
+                {% render 'product-variant-options', product: product, option: option, block: block %}
+              </select>
+          {% endif %}
+            <div class="select">
+              <select 
+                option="option{{ option.position }}"
+                id="Option-{{ section.id }}-{{ forloop.index0 }}"
+                class="select__select"
+                name="options[{{ option.name | escape }}]"
+                form="{{ product_form_id }}"
+              >
+                {% render 'product-variant-options', product: product, option: option, block: block %}
+              </select>
+              {% render 'icon-caret' %}
+            </div>
+          </div>
+        {% else %}
+          <div class="product-form__input product-form__input--dropdown dsds">
+            <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
+              {{ option.name }}
+            </label>
+            {% assign opttt = option.name | downcase %}
+            {% if opttt contains 'date' or opttt contains 'dates' %}
+
+          <div class="dropdown_date">
+              <span>Select the Date</span>
+              <div class="drop_icon">{% render 'icon-caret' %}</div>
+              <div class="less-sticky">
+                  <ul>
+                    {% for value in option.values %}
+                    <li value="{{ value }}" class="cb-item">{{ value }}</li>
+                    {% endfor %}
+                  </ul>
+              </div>
+          </div>
+              
+            {% endif %}
+            <div class="select {% if opttt contains 'date' or opttt contains 'dates' %}my_selects{% endif %}" {% if opttt contains 'date' or opttt contains 'dates' %}style="display:none;"{% endif %} 222>
+              <select
+                option="option{{ option.position }}"
+                id="Option-{{ section.id }}-{{ forloop.index0 }}"
+                class="select__select {% if opttt contains 'date' or opttt contains 'dates' %}date_selects{% endif %} {% if opttt contains 'location' or opttt contains 'locations' %}location_selects{% endif %}" 
+                name="options[{{ option.name | escape }}]"
+                form="{{ product_form_id }}"
+              >
+                {% render 'product-variant-options', product: product, option: option, block: block %}
+              </select>
+              {% render 'icon-caret' %}
+            </div>
+          </div>
+        {% endif %}
+        
+      {%- endfor -%}
+
+      <script type="application/json">
+        {{ product.variants | json }}
+      </script>
+    </variant-selects>
+  {%- endif -%}
+{%- endunless -%}
+
+<noscript class="product-form__noscript-wrapper-{{ section.id }}">
+  <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
+    <label class="form__label" for="Variants-{{ section.id }}">
+      {{- 'products.product.product_variants' | t -}}
+    </label>
+    <div class="select">
+      <select
+        name="id"
+        id="Variants-{{ section.id }}"
+        class="select__select"
+        form="{{ product_form_id }}"
+      >
+        {%- for variant in product.variants -%}
+          <option
+            {% if variant == product.selected_or_first_available_variant %}
+              selected="selected"
+            {% endif %}
+            {% if variant.available == false %}
+              disabled
+            {% endif %}
+            value="{{ variant.id }}"
+          >
+            {%- liquid
+              echo variant.title
+              echo variant.price | money | strip_html | prepend: ' - '
+              if variant.available == false
+                echo 'products.product.sold_out' | t | prepend: ' - '
+              endif
+              if variant.quantity_rule.increment > 1
+                echo 'products.product.quantity.multiples_of' | t: quantity: variant.quantity_rule.increment | prepend: ' - '
+              endif
+              if variant.quantity_rule.min > 1
+                echo 'products.product.quantity.minimum_of' | t: quantity: variant.quantity_rule.min | prepend: ' - '
+              endif
+              if variant.quantity_rule.max != null
+                echo 'products.product.quantity.maximum_of' | t: quantity: variant.quantity_rule.max | prepend: ' - '
+              endif
+              # TODO: enable theme-check once `item_count_for_variant` is accepted as valid filter
+              # theme-check-disable
+              assign cart_quantity = cart | item_count_for_variant: variant.id
+              # theme-check-enable
+              if cart_quantity > 0
+                echo 'products.product.quantity.in_cart_html' | t: quantity: cart_quantity | prepend: ' - '
+              endif
+            -%}
+          </option>
+        {%- endfor -%}
+      </select>
+      {% render 'icon-caret' %}
+    </div>
+  </div>
+</noscript>
+
+
+<style>
+.less-sticky {
+    max-height: 200px;
+    margin-top: 0px;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    display:none;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    border-width: 0px 1px 1px;
+    border-style: solid solid solid;
+    border-color: rgb(220, 220, 220) rgb(220, 220, 220) rgb(220, 220, 220);
+}
+.less-sticky::-webkit-scrollbar {
+    display: none;
+}
+.dropdown_date .less-sticky ul {
+    width: 100%;
+    margin: 0;
+    padding-left: 0px;
+}
+.dropdown_date {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #a6a6a6;
+    padding: 3px 0px 3px 10px;
+    height: 3.6rem !important;
+    cursor: pointer;
+    line-height: 29px;
+}
+.dropdown_date > *:last-child {
+        /* display: block; */
+        transition: 0.4s; /* fade out */
+        position: absolute;
+        left: 0;
+        top: 100%;
+        border: 1px solid #888;
+        background-color: #fff;
+        box-shadow: 1px 2px 4px 1px #666;
+        box-shadow: 1px 2px 4px 1px #4448;
+        z-index: 9999;
+        min-width: 100%;
+        box-sizing: border-box;
+}
+    .dropdown_date:focus > *:last-child,
+    .dropdown_date > *:focus ~ *:last-child,
+    .dropdown_date > .less-sticky:last-child:hover {
+        /* display: block; */
+        opacity: 1;
+        transition: 0.15s;
+        pointer-events: auto;
+    }
+    .dropdown_date .drop_icon {
+      position: absolute;
+      top: 1px;
+      right: 8px;
+      width: auto;
+      height: auto;
+      pointer-events: none;
+  }
+  .dropdown_date .drop_icon svg {
+      width: 10px;
+      height: auto;
+      color: #000;
+  }
+  .product-form__input .select svg {
+      color: #000;
+      top: 16px;
+      right: 9px;
+  }
+  .product-form__input .select__select {
+      padding: 3px 30px 3px 10px;
+  }
+@supports (-ms-ime-align:auto) {
+    .dropdown_date > *:last-child:hover {
+        /* display: block; */
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .dropdown_date > *:last-child:hover {
+        /* display: block; */
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+.dropdown_date:not(.sticky) > *:not(:last-child):focus,
+.dropdown_date:focus {
+    pointer-events: none; /* Causes second click to close */
+}
+.dropdown_date:hover {
+    outline: 2px solid #252525;
+}
+.downarrow:focus {
+    outline: 2px solid #8BF;
+    outline: 2px solid #48F8;
+}
+.cb-item:hover{
+    background:#1967d2;
+    color:#fff;
+}
+.cb-item {
+    display: block;
+    margin: 0px;
+    padding: 2px;
+    padding-left: 22px;
+    line-height: calc(1 + .6 / var(--font-body-scale));
+    font-size: 1.4rem !important;
+    font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+    font-weight: var(--font-body-weight);
+    font-size: 1.2rem;
+    color: rgba(var(--color-foreground), .75);
+}
+.dropdown_date span{
+    font-size: 1.4rem !important;
+    font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+    font-weight: var(--font-body-weight);
+    font-size: 1.2rem;
+    color: rgba(var(--color-foreground), .75);
+    width: 100%;
+    display: flex;
+    align-items: center
+    padding-right:20px;
+}
+ li.cb-item.sold-out:hover {
+    color: #fff;
+} 
+@media screen and (max-width: 767px) {
+.dropdown_date span{
+      white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    max-width:120px;
+}
+  .dropdown_date .drop_icon {
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #fff;
+    padding: 3px 8px 0 14px;
+}
+  .dropdown_date span {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    padding: 0 12px 0 0;
+    width: 100%;
+    min-width: 100%;
+}
+}
+</style>
+<script>
+$(document).on('click', 'li.cb-item', function() {
+    var value = $(this).attr('value');
+    var thiss = $(this);
+    $('.select.my_selects select.select__select.date_selects').val(value);
+    window.thiss.onVariantChange();
+    $(this).parents('.dropdown_date').find('.less-sticky').hide()
+    setTimeout(function(){
+    var a = thiss.html();
+    $('.dropdown_date').find('span').html(a);
+    }, 500);
+});
+
+  {% if product.handle == 'face-to-face-test-tag-course-wa' %}
+$(document).on('change','select.select__select.location_selects',function(){
+setTimeout(function(){
+var value = $('.dropdown_date span').html();
+$('.select.my_selects select.select__select.date_selects').val(value);
+window.thiss.onVariantChange();
+}, 700);
+});
+
+    {% endif %}
+
+
+{% if product.handle == 'face-to-face-course-wa' %}
+$(document).ready(function(){
+setTimeout(function(){
+var value = $('.less-sticky ul li:eq(0)').html();
+$('.dropdown_date span').html(value);
+}, 200);
+});
+
+{% endif %}
+
+  
+$(document).on('click','.dropdown_date span , .drop_icon',function(){
+$(this).parents('.dropdown_date').find('.less-sticky').toggle();
+});
+
+$("body").click(function(event) {
+  if (!$(event.target).closest('.dropdown_date').length) {
+    $('.less-sticky').hide();
+  }
+});
+
+</script>

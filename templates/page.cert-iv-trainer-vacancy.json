@@ -1,0 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "video_hdgK34": {
+      "type": "video",
+      "settings": {
+        "heading": "Why Choose Test & Tag Training?",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/XaWZQc3CrOs?rel=0",
+        "cover_image": "shopify://shop_images/employment-video.jpg",
+        "description": "Life at Test and Tag Training | Join Our Team",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_NBeRVn": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<p>As a Recognised Training Organisation, Test & Tag Training is at the forefront of offering comprehensive training services to test & tag electrical appliances using PAT Testers, adhering to Australia/New Zealand Standards 3760 & 3012. Our courses are based on the UEERL0003 \"Conduct in-service safety testing of electrical cord assemblies and cord-connected equipment.\"</p>\n<p>Join our team of experts as we expand our business in 2024 and beyond. As industry leaders, we conduct one-day and half-day face-to-face courses, providing you with a fantastic opportunity to contribute to the growth and success of our organisation.</p>\n<p><strong><a href=\"mailto:mariska@exeltrain.com.au?subject=Cert%20IV%20Trainer%20and%20Assessor%20Job%20Application&amp;body=Please%20include%20your%20Resume%20and%20a%20Cover%20Letter.\">Apply Now</a> & Start Your Teaching Career With Us!</strong> Don't miss out on this incredible opportunity to join Test & Tag Training. Take the next step in your career journey by applying now. We can't wait to welcome you to our team of dedicated educators making a real difference in the industry.</p>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_hdgK34",
+    "custom_liquid_NBeRVn"
+  ]
+}

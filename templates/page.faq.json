@@ -1,0 +1,423 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page_3ei3mE": {
+      "type": "page",
+      "settings": {
+        "page": "faq",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "custom_liquid_Xgzgem": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\" id=\"enrolment-course-information\">\n<h2>Enrolment & Course Information</2>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_keYGN3": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_pAjNK4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I enrol?",
+            "icon": "none",
+            "row_content": "<p>Enrolment is easy! You can enrol online by clicking on the \"Find a Course\" in the top right!</p><p>Alternatively, you can book by calling us directly on 1300 848 302.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_MRKeFh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any pre-requisites for doing a Test and Tag Course?",
+            "icon": "none",
+            "row_content": "<p>There are no prerequisites required to undertake our test and tag course. Likewise, you don’t need to have any kind of electrical background or qualifications, as our course will teach you everything you need to know, starting from the basics. The majority of our students actually have no electrical background at all.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LftCGJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does the Online Test and Tag Course work?",
+            "icon": "none",
+            "row_content": "<p>Our <a href=\"/products/online-test-tag-course\" title=\"Online Test & Tag Courses\">Online Test & Tag Course</a> contains exactly the same content as our <a href=\"https://www.testandtagtraining.com.au/collections/test-tag-training-courses\" title=\"https://www.testandtagtraining.com.au/collections/test-tag-training-courses\">face-to-face Test & Tag Course</a> - it's just simply been adapted to work with our online learning platform. We will teach you how to properly test and tag according to Australian Standards AS/NZS 3760, and successful students will be considered a 'Competent Person' and issued a certificate.</p><p>You'll be able to access all of the content via our state-of-the-art online learning modules, and the assessment will take place in our virtual classroom led by one of our experienced test and tag trainers. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_6mbCUU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How is the Nationally Recognised course different to the Short course?",
+            "icon": "none",
+            "row_content": "<p>Both the Nationally Recognised and Short Courses are delivered in a face-to-face training session over 1 day. However, the major difference between them is that the Nationally Recognised Course has an additional self-paced OHS (Occupational Health and Safety) online component and is thereby considered a higher qualification. </p><p>The course you decide on will largely depend on your particular needs. To choose the course that fits your needs the best, simply go to <a href=\"/pages/choosing-right-course\" title=\"Which Test & Tag Course Should I Choose?\">Choosing the Right Course</a>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bW7NeL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does the Face-To-Face Course go for?",
+            "icon": "none",
+            "row_content": "<p>The traditional course consists of one day of face-to-face training, starting at 8:00 a.m. and finishing at approximately 4:30 p.m. </p><p>If you’re planning on doing the Nationally Recognised course, it’ll consist of an additional self-paced OHS online component, which is to be completed in <br/>your own time before the course.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_yrAHXk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How is the Face-To-Face Course structured?",
+            "icon": "none",
+            "row_content": "<p>The morning session will predominately focus on the theory required to test and tag, while the afternoon consists of practical hands-on training. All of our classes are kept to a maximum of 12 people so that everyone in the room can get individual time and support from our trainer. </p><p>Upon completing the course, you should be completely comfortable with testing and tagging on your own.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8iQhFx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does the Online Course go for?",
+            "icon": "none",
+            "row_content": "<p>The Online Course is more self-paced when compared to traditional classroom training, but we find that the majority of our students require approximately 6-7 hours to complete the course. </p><p>The theory part of the training is self-paced, and we find that most students allocate about 3-4  hours for this. </p><p>The practical session is more structured as it is led by our instructor and will take 3.5 hours.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_z7aN9f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How is the Online Course structured?",
+            "icon": "none",
+            "row_content": "<p>The Online Course is split into two parts, theory and practical, similar to the face-to-face training. Initially, we will send you login details to access our online learning platform. This is where you will complete the theory learning part of the course - this is made up of multiple-choice questions and interactive quizzes.<br/><br/>Next is the practical training session. We will send you a link to join our virtual classroom, where our expert trainer will guide you via video. They will instruct you on how to operate a PAT tester and ask you to perform a variety of tests and record results.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_htTELt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Who will be the instructor on the day?",
+            "icon": "none",
+            "row_content": "<p>We have a number of different trainers, all of which are test and tag industry professionals with many years of experience, along with having  a minimum Cert IV in Training and Assessment. In addition, they’re all very friendly and approachable and make the training an enjoyable experience. </p><p>Whatever your reason for doing the course is, we guarantee our trainers will give you all the knowledge and skills required to successfully test and tag.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_YBLqwt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is there an age requirement for participants in the course?",
+            "icon": "none",
+            "row_content": "<p>No, there is no age requirement to take our test and tag training course.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8anh8p": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I choose a date and location for the Face-To-Face Course?",
+            "icon": "none",
+            "row_content": "<p>Absolutely! While completing your booking online, simply choose the date and location that suits you best. </p><p>Alternatively, you can reach out to our friendly team at 1300 848 302, and they'll be more than happy to book a spot for you.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pURUGL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any specific requirements for taking the Online Course?",
+            "icon": "none",
+            "row_content": "<p>Our Online Test & Tag Course covers both theoretical and practical aspects of test and tag training. To ensure a comprehensive learning experience, it's mandatory to have access to a PAT Tester for hands-on training. </p><p>If you don't already have one, no worries! You can buy a PAT Tester from us to enhance your learning and practical skills during the course.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ik6ita": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I access course materials/resources after completing the course?",
+            "icon": "none",
+            "row_content": "<p>Certainly! We're committed to your ongoing success. On the day of the course, each student receives a comprehensive training manual that they can take home. This manual covers all the course content and more, serving as a handy reference whenever you need to refresh your concepts.</p><p>Furthermore, our website and YouTube channels host a wealth of resources that are accessible at any time. Whether you want to get the latest test and tag updates or want to quickly get help with testing a particular appliance. <br/><br/>Additionally, we offer lifetime technical support once you've completed the course. If you ever encounter challenges or have questions related to testing and tagging, feel free to reach out to us anytime. We're here to assist you on your journey.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_RU8wQD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What qualifications and experience do the trainers have?",
+            "icon": "none",
+            "row_content": "<p>Our trainers are experts in the field of Testing and Tagging with extensive qualifications and hands-on experience. </p><p>Not only are they seasoned professionals, but they also possess a strong background in teaching. Rest assured, our trainers are well-versed with the latest test and tag regulations and best practices for appliance testing and tagging across various environments. </p><p>They are dedicated to imparting their knowledge and expertise to ensure you receive the highest quality training available.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_EH6thQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I change my enrolment date if I can't attend the scheduled one?",
+            "icon": "none",
+            "row_content": "<ul><li>Students who wish to transfer their booking for a later course must do so at least 5 days prior to their scheduled course date; in this case, course fees will be transferred to the next course.</li><li>Students are only permitted to transfer on one occasion. An administration fee of $50 + (GST) will be applied for any further transfers unless applicable to any of the above reasons.</li><li>No refund will be given for withdrawal after the course has commenced.</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LCRAY6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if I need technical support after the course?",
+            "icon": "none",
+            "row_content": "<p>You’ll have the peace of mind knowing that we'll be there when you need us, whether it's by phone, email or in person. Every single student taught by Test & Tag Training receives free lifetime technical support, no matter what kind of course you completed. <strong>Guaranteed. </strong></p><p>We want to ensure we're making people's jobs easier by offering dependable service and expert advice when you need it most.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_pAjNK4",
+        "collapsible_row_MRKeFh",
+        "collapsible_row_LftCGJ",
+        "collapsible_row_6mbCUU",
+        "collapsible_row_bW7NeL",
+        "collapsible_row_yrAHXk",
+        "collapsible_row_8iQhFx",
+        "collapsible_row_z7aN9f",
+        "collapsible_row_htTELt",
+        "collapsible_row_YBLqwt",
+        "collapsible_row_8anh8p",
+        "collapsible_row_pURUGL",
+        "collapsible_row_ik6ita",
+        "collapsible_row_RU8wQD",
+        "collapsible_row_EH6thQ",
+        "collapsible_row_LCRAY6"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_jMK3wf": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\" id=\"on-site-training\">\n<h2>On-Site Training</2>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_6Hm3Aq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_FbD6mr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "If I have a group of people that need training, can we receive a discount?",
+            "icon": "none",
+            "row_content": "<p>If you have more than five people that need training, we can in fact, offer a group discount. </p><p>Please call 1300 848 302 if you would like to discuss training options.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nTd3wQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can you conduct a course at my workplace?",
+            "icon": "none",
+            "row_content": "<p>Yes, we certainly can! We have provided onsite test and tag training for some of the largest companies in Australia and have worked with hundreds of smaller businesses in a wide variety of industries. </p><p>If you would like to discuss how we can put together a tailored training option for your company, please <a href=\"/pages/contact\" title=\"Contact\">contact us</a>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ViMmEM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is there a minimum number of participants required for on-site training?",
+            "icon": "none",
+            "row_content": "<p>For onsite training, a minimum of 6 and a maximum of 12 participants are required.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_FbD6mr",
+        "collapsible_row_nTd3wQ",
+        "collapsible_row_ViMmEM"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_4pb4ET": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\" id=\"payment-policies\">\n<h2>Payment and Policies</2>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_NkM9de": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_zMzbxE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Payment In Advance",
+            "icon": "none",
+            "row_content": "<p>To ensure that you have secured your booking for a course, please note that payment must be received no less than 5 working days prior to the course start date. </p><p>A spot in our course is only fully secure once payment has been made. </p><p>If the course is cancelled or postponed for more than 4 weeks, we will refund all fees.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BrJxFF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cancellation and Refund Policy",
+            "icon": "none",
+            "row_content": "<p>Regarding cancellations, if a course is cancelled or postponed by more than 4 weeks, all fees will be refunded. To withdraw from a course and receive a full refund, contact our administration office at least five working days before the course starts. If you withdraw within five working days up to 24 hours before the course begins, a 50% refund is available. No refunds are possible for cancellations within 24 hours or for no-shows on the course day. If full payment hasn't been received and a cancellation occurs, EXELTest&Tag Pty Ltd may seek to recover 100% of the course fees.<br/><br/>Online courses are considered to commence once you log in, and no refunds apply.<br/><br/>Refunds will be handled case by case, processed by the Finance and Accounts Department, and based on the original payment method. Refunds take 5 to 10 working days to process and are documented in the student and financial systems. Disputes will be resolved per our Complaints and Appeals policy.<br/><br/>For more information, please view our Refund Policy.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tLi3M9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Complaints & Appeals Policy and Procedure",
+            "icon": "none",
+            "row_content": "<p>Test & Tag Training believes that a student who has a complaint has the right to raise the complaint and expects that every effort will be made to resolve it in accordance with this policy without prejudice or fear of reprisal or victimisation. The student has the right to present the complaint or appeal informally as well as in writing.<br/><br/>To lodge a complaint or provide feedback, please <a href=\"/pages/contact\" title=\"Contact\">contact us</a> online or submit in writing to:<br/><br/>Test & Tag Training<br/>8 Mosrael Place, Rowville, VIC 3178<br/><br/>To view our full Policy & Procedure, download the <a href=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/Complaints-Appeals-Policy-Procedure-Mar-2017.pdf?v=1706227650\" title=\"Complaints & Appeals Policy & Procedure - Test & Tag Training\">Complaints & Appeals Policy & Procedure</a>.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_zMzbxE",
+        "collapsible_row_BrJxFF",
+        "collapsible_row_tLi3M9"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_mqDNbF": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\" id=\"certification-accreditation\">\n<h2>Certification and Accreditation</2>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_kpxmdM": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_WMPFcH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the course Nationally Accredited?",
+            "icon": "none",
+            "row_content": "<p>As Test and Tag Training is a Registered Training Organisation, this means our Test & Tag Course is of a Nationally Recognised standard.</p><p>We also offer short courses for anyone who’s only looking to meet the minimum requirements of the test and tag industry and isn’t necessarily after the highest qualification.<br/><br/></p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_L8zehg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any renewal requirements for the certification?",
+            "icon": "none",
+            "row_content": "<p>You don’t have to, however, to retain your status as a \"Competent Person\" you MUST have the latest skills and knowledge, as well as keep up to date with the AS/NZS 3760:2022 Standard and any other relevant Codes of Practice. </p><p>The best way to remain competent is to make sure you check the AS/NZS 3760:2022 Standard regularly and complete further training if you feel the need. <br/><br/>We provide an Online Test and Tag Refresher Course which is a great way to ensure you’re completely confident with your testing and tagging skills - and it proves that you’re maintaining an on-going competency which is a requirement.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_DpzQqg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the benefits of completing the Test and Tag Course?",
+            "icon": "none",
+            "row_content": "<p>Completing a Test and Tag Course offers several advantages. </p><ul><li>It enhances safety awareness. This course equips you with the knowledge and skills to inspect electrical appliances and equipment for potential hazards, reducing the risk of accidents such as electric shocks and fires at your workplace.</li><li>It broadens your career prospects. Many businesses and organisations require individuals who can regularly assess and label their electrical devices to ensure a safe working environment. By completing this course, you become a competent person, which is a requirement to conduct any testing and tagging.</li><li>If you are looking to start your test and tag businesses, it’s best to upskill and learn about the test and tag regulations, which can be done through our nationally accredited course.</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_TjRTex": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will I receive a digital or physical certificate?",
+            "icon": "none",
+            "row_content": "<p>The certificate you receive depends on the type of course you complete. </p><p>For our short courses, you will receive a digital certificate. </p><p>For our Nationally Recognized courses, you will get both, a physical certificate of completion along with receiving a digital certificate.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_WMPFcH",
+        "collapsible_row_L8zehg",
+        "collapsible_row_DpzQqg",
+        "collapsible_row_TjRTex"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "page_3ei3mE",
+    "main",
+    "custom_liquid_Xgzgem",
+    "collapsible_content_keYGN3",
+    "custom_liquid_jMK3wf",
+    "collapsible_content_6Hm3Aq",
+    "custom_liquid_4pb4ET",
+    "collapsible_content_NkM9de",
+    "custom_liquid_mqDNbF",
+    "collapsible_content_kpxmdM"
+  ]
+}

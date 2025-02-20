@@ -1,0 +1,88 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_Brjptz": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<table class=\"grey-white\">\n\t<tr class=\"grey\">\n\t\t<td>\n\t\t</td>\n\t\t<td>\n\t\t<strong>Nationally Accredited Course</strong>\n\t\t</td>\n\t\t<td>\n\t\t\t<strong>Short Course</strong>\n\t\t</td>\n\t</tr>\n\t<tr>\n\t\t<td>\n\t\t\t<strong>Costs</strong>\n\t\t</td>\n\t\t<td>\n\t\t\t$495 GST Exempt\n\t\t</td>\n\t\t<td>\n\t\t\t$329 + GST\n\t\t</td>\n\t</tr>\n\t<tr class=\"grey\">\n\t\t<td>\n\t\t\t<strong>Duration</strong>\n\t\t</td>\n\t\t<td>\n\t\t\t1 day face-to-face or online<br>\n\t\t\t(plus an online WHS component)\n\t\t</td>\n\t\t<td>\n\t\t\t1 day face-to-face or online\n\t\t</td>\n\t</tr>\n\t<tr>\n\t\t<td>\n\t\t\t<strong>Locations</strong>\n\t\t</td>\n\t\t<td>\n\t\t\tAustralia wide or online\n\t\t</td>\n\t\t<td>\n\t\t\tAustralia wide or online\n\t\t</td>\n\t</tr>\n\t<tr class=\"grey\">\n\t\t<td>\n\t\t\t<strong>Qualifications Received</strong>\n\t\t</td>\n\t\t<td>\n\t\t\tStatements of Attainment &amp;<br> ID card with Cert No.\n\t\t</td>\n\t\t<td>\n\t\t\tCertificate of Attendance\n\t\t</td>\n\t</tr>\n\t<tr>\n\t\t<td>\n\t\t\t<strong>Qualification Level</strong>\n\t\t</td>\n\t\t<td>\n\t\t\tHighest level (ASQA approved)\n\t\t</td>\n\t\t<td>\n\t\t\tMinimum requirement\n\t\t</td>\n\t</tr>\n\t<tr class=\"grey\">\n\t\t<td>\n\t\t\t<strong>Post-Course Support</strong>\n\t\t</td>\n\t\t<td>\n\t\t\tLifetime technical support\n\t\t</td>\n\t\t<td>\n\t\t\tLifetime technical support\n\t\t</td>\n\t</tr>\n</table>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "video_QrQWUn": {
+      "type": "video",
+      "settings": {
+        "heading": "How to Choose the Right Test & Tag Course",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/9TDvbxRMZyg",
+        "cover_image": "shopify://shop_images/choosing-right-course-video.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_FDwree": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<h2>Making the Choice</h2>\n<p>Either course will allow you to test and tag in all states around Australia according to AS/NZS 3760. In normal circumstances, the short course will be sufficient for most people.</p>\nHowever, the Nationally Recognised Course is highly recommended in specific circumstances.</p>\n<ul>\n<li>For people working in high-risk environments</li>\n<li>Testing items the general public will come in contact with</li>\n<li>If you're looking to run a test and tag business</li>\n<li>If you want to be recognised by insurance companies and auditors</li>\n<li>Your industry requires a higher qualification</li>\n<li>If you live in Queensland and want a Restricted Electrical Contractors Licence</li>\n</ul>\n<p>Our Test and Tag Training staff are happy to discuss the options with you and help make sure you choose the right course, please call us on <a href=\"tel:1300848302\">1300 848 302</a> or <a href=\"mailto:enquiries@testandtagtraining.com.au\">email us.</p>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "featured_collection_Ngz88g": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "test-tag-training-courses",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_Brjptz",
+    "video_QrQWUn",
+    "custom_liquid_FDwree",
+    "featured_collection_Ngz88g"
+  ]
+}

@@ -1,0 +1,407 @@
+<div class="student_enrolment_page">
+  <div class="page-width">
+    <h1>Student Enrolment Form</h1>
+    <div class="student_enrolment_a2new">
+      {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+        {%- if form.posted_successfully? -%}
+          <script> window.location = "/pages/student-information-thank-you"; </script>
+        {%- elsif form.errors -%}
+          <div class="form__message">
+            <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+              {% render 'icon-error' %}
+              {{ 'templates.contact.form.error_heading' | t }}
+            </h2>
+          </div>
+          <ul class="form-status-list caption-large" role="list">
+            <li>
+              <a href="#ContactForm-email" class="link">
+                {{ form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email }}
+              </a>
+            </li>
+          </ul>
+        {%- endif -%}
+        <div class="common_form_field">
+          <input class="common_form__input" type="date" name="contact[Course Date]" placeholder="Course Date" >          
+        </div>
+        <div class="form_column2">
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[Surname]" placeholder="Surname" >
+          </div>        
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[First Name]" placeholder="First Name" >
+          </div>
+        </div>
+        <div class="common_form_field">
+          <select class="common_form__input" name="contact[Title]">
+              <option value="Not Specified">Title</option>
+              <option value="Mr"> Mr </option>
+              <option value="Mrs"> Mrs </option>
+              <option value="Miss"> Miss </option>
+              <option value="Ms"> Ms </option>
+          </select>
+        </div>
+        <hr>
+        <div class="form_column2">
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[Postal Address]" placeholder="Postal Address" >
+          </div>        
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[Postal Suburb]" placeholder="Postal Suburb" >
+          </div>
+          <div class="common_form_field">
+            <select class="common_form__input" name="contact[Postal State]">
+                <option value=""> Postal State </option>
+                <option value="ACT"> ACT </option>
+                <option value="NSW"> NSW </option>
+                <option value="NT"> NT </option>
+                <option value="QLD"> QLD </option>
+                <option value="SA"> SA </option>
+                <option value="TAS"> TAS </option>
+                <option value="VIC"> VIC </option>
+                <option value="WA"> WA </option>
+            </select>
+          </div>        
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[Postal Postcode]" placeholder="Postal Postcode" >
+          </div>
+        </div>
+        <hr>
+        <div class="form_column2">
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[Telephone (home)]" placeholder="Telephone (home)" >
+          </div>        
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[Telephone (work)]" placeholder="Telephone (work)" >
+          </div>
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[Telephone (mobile)]" placeholder="Telephone (mobile)" >
+          </div>        
+          <div class="common_form_field">
+            <input
+              autocomplete="email"
+              type="email"
+              id="ContactForm-email"
+              class="common_form__input"
+              name="contact[email]"
+              spellcheck="false"
+              autocapitalize="off"
+              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+              aria-required="true"
+              {% if form.errors contains 'email' %}
+                aria-invalid="true"
+                aria-describedby="ContactForm-email-error"
+              {% endif %}
+              placeholder="{{ 'templates.contact.form.email' | t }}"
+            >            
+          </div>
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[Date of Birth]" placeholder="Date of Birth" >
+          </div>
+          <div class="common_form_field pt10 countrybirthopt">
+            <span class="inputradiolabel mr10">Country of birth:</span>
+            <label class="custom_radio_style">Australia
+              <input type="radio" name="contact[Country Of Birth]" value="Australia">
+              <span class="checkmark"></span>
+            </label>
+            <label class="custom_radio_style">Other
+              <input type="radio" name="contact[Country Of Birth]" value="Other" class="otherbirth">
+              <span class="checkmark"></span>
+            </label>
+            <div class="common_form_field m0 country_specify" style="display: none;">
+              <input class="common_form__input mt10" type="text" name="contact[Country Of Birth Specify]" placeholder="Please Specify" >
+            </div>            
+          </div>
+        </div>
+        <hr>
+        <h2>AVETMISS Information Collection (RTO Compliance Requirement)</h2>
+        <div class="common_form_field w-100 languageopt">
+          <p>Do you speak a language other than English at home?</p>
+          <label class="custom_radio_style">Yes
+            <input type="radio" name="contact[Other Languages]" class="languageoptyes">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_radio_style">No (English only)
+            <input type="radio" name="contact[Other Languages]">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="common_form_field w-100 please_specify" style="display: none;">
+          <p>Please specify:</p>
+          <input class="common_form__input" name="contact[Other Language(s)]" placeholder="Other Language(s)" type="text" value="">
+        </div>
+        <div class="common_form_field w-100">
+            <p>How well do you speak English?</p>
+            <select class="common_form__input" name="english_level">
+                <option value="Very Well"> Very Well </option>
+                <option value="Well"> Well </option>
+                <option value="Not Well"> Not Well </option>
+                <option value="Not at all"> Not at all </option>
+            </select>
+        </div>
+        <div class="common_form_field w-100">
+          <p>Are you of Aboriginal or Torres Strait Islander Origin?</p>
+          <label class="custom_radio_style">No
+            <input type="radio" name="contact[Aboriginal Torres Strait Islander]">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_radio_style">Yes - Aboriginal
+            <input type="radio" name="contact[Aboriginal Torres Strait Islander]">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_radio_style">Yes - Torres Strait Islande
+            <input type="radio" name="contact[Aboriginal Torres Strait Islander]">
+            <span class="checkmark"></span>
+          </label>          
+        </div>
+        <div class="common_form_field w-100 disability_opt">
+          <p>Do you consider yourself to have a disability, impairment or long-term condition?</p>
+          <label class="custom_radio_style">Yes
+            <input type="radio" name="contact[Disability]" class="disability_yes">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_radio_style">No
+            <input type="radio" name="contact[Disability]" class="disability_no">
+            <span class="checkmark"></span>
+          </label>        
+        </div>
+        <div class="common_form_field w-100 disability_list" style="display: none;">
+          <p>Please indicate areas of disability, impairment or long-term condition. You may indicate more than one option:</p>        
+          <label class="custom_checkbox_style">Hearing/Deaf
+            <input type="checkbox" name="contact[Hearing/Deaf]" value="Hearing/Deaf">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_checkbox_style">Physical
+            <input type="checkbox" name="contact[Physical]" value="Physical">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_checkbox_style">Intellectual
+            <input type="checkbox" name="contact[Physical]"  value="Intellectual">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_checkbox_style">Learning
+            <input type="checkbox" name="contact[Intellectual]"  value="Intellectual">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_checkbox_style">Mental Illness
+            <input type="checkbox" name="contact[Mental Illness]"  value="Mental Illness">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_checkbox_style">Acquired Brain Impairment
+            <input type="checkbox" name="contact[Acquired Brain Impairment]"  value="Acquired Brain Impairment">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_checkbox_style">Vision
+            <input type="checkbox" name="contact[Vision]"  value="Vision">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_checkbox_style">Medical Condition
+            <input type="checkbox" name="contact[Medical Condition]"  value="Medical Condition">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_checkbox_style">Other
+            <input type="checkbox" name="contact[Other]"  value="Other">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <hr>
+        <div class="common_form_field w-100">
+          <p>Emergency Contact Person</p>
+          <div class="form_column2">
+            <div class="common_form_field">
+              <input class="common_form__input" type="text" name="contact[name]" placeholder="Name" >
+            </div>        
+            <div class="common_form_field">
+              <input class="common_form__input" type="text" name="contact[phone]" placeholder="Phone" >
+            </div>
+          </div>
+          <p>If you require any form of additional support or have any special learning needs then please outline below, so that assistance can be provided on the day: (the information provided will be dealt with discretion and in strict confidence only for the purpose for providing additional support during training and assessment by EXELTrain) example - any language, literacy, numeracy issues and or other support.</p>
+          <textarea class="common_form__input" row="12"></textarea>
+        </div>
+        <div class="common_form_field w-100">
+          <p>What is your highest COMPLETED school level?</p>
+          <select class="common_form__input" name="contact[School Level]">
+              <option value="Completed Year 12"> Completed Year 12 </option>
+              <option value="Completed Year 11"> Completed Year 11 </option>
+              <option value="Completed Year 10"> Completed Year 10 </option>
+              <option value="Completed Year 9 or equivalent"> Completed Year 9 or equivalent </option>
+              <option value="Completed Year 8 or Lower"> Completed Year 8 or Lower </option>
+              <option value="Never attended school"> Never attended school </option>
+          </select>
+        </div>
+        <div class="common_form_field w-100">
+          <p>Are you still enrolled in secondary or senior secondary education?</p>
+          <select class="common_form__input" name="contact[Enrolled Secondary Education]">
+              <option value="Yes"> Yes </option>
+              <option value="No"> No </option>
+          </select>
+        </div>
+        <div class="common_form_field w-100">
+          <p>Have you SUCCESSFULLY completed any of the following qualifications?</p>
+          <label class="custom_radio_style">Yes
+            <input type="radio" name="contact[succesful_qualifications]">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_radio_style">No
+            <input type="radio" name="contact[succesful_qualifications]">
+            <span class="checkmark"></span>
+          </label>        
+        </div>
+        <div class="common_form_field w-100 fullwidthradio">      
+          <label class="custom_radio_style">Bachelor Degree or Higher Degree
+            <input type="radio" name="contact[Qualifications]" value="Bachelor Degree or Higher Degree">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_radio_style">Advanced Diploma or Associate Degree
+            <input type="radio" name="contact[Qualifications]"  value="Advanced Diploma or Associate Degree">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_radio_style">Diploma (or Associate Diploma)
+            <input type="radio" name="contact[Qualifications]"  value=">Diploma (or Associate Diploma)">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_radio_style">Certificate IV (or advanced Certificate
+            <input type="radio" name="contact[Qualifications]" value="Certificate IV (or advanced Certificate">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_radio_style">Certificate III (or Trade Certificate)
+            <input type="radio" name="contact[Qualifications]"  value="Certificate III (or Trade Certificate)">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_radio_style">Certificate II
+            <input type="radio" name="contact[Qualifications]" value="Certificate II">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_radio_style">Certificate I
+            <input type="radio" name="contact[Qualifications]" value="Certificate I">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_radio_style">Certificates other than the above
+            <input type="radio" name="contact[Qualifications]" value="Certificates other than the above">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="common_form_field w-100">
+          <p>Of the following categories, which BEST describes your current employment status?</p>
+          <select class="common_form__input" name="contact[Current Employment]">
+            <option value="Full-time employee"> Full-time employee </option>
+            <option value="Part-time employee"> Part-time employee </option>
+            <option value="Self-employed not employing others"> Self-employed not employing others </option>
+            <option value="Self-employed - employing others"> Self-employed - employing others </option>
+            <option value="Employed Unpaid worker in a family business"> Employed Unpaid worker in a family business </option>
+            <option value="Unemployed seeking full-time work"> Unemployed seeking full-time work </option>
+            <option value="Unemployed seeking part-time work"> Unemployed seeking part-time work </option>
+            <option value="Not Employed not seeking employment"> Not Employed not seeking employment </option>
+          </select>       
+        </div>
+        <div class="common_form_field w-100">
+          <p>Of the following categories, which BEST describes your main reason for undertaking this course/traineeship/apprenticeship?</p>
+          <select class="common_form__input" id="" name="contact[Reason For Training]">
+            <option value="To get a job"> To get a job </option>
+            <option value="To develop my existing business"> To develop my existing business </option>
+            <option value="To start my own business"> To start my own business </option>
+            <option value="To try for a different career"> To try for a different career </option>
+            <option value="To get a better job or promotion"> To get a better job or promotion </option>
+            <option value="It was a requirement of my job"> It was a requirement of my job </option>
+            <option value="I wanted extra skills for my job"> I wanted extra skills for my job </option>
+            <option value="To get into another course of study"> To get into another course of study </option>
+            <option value="For my person interest or self-development"> For my person interest or self-development </option>
+            <option value="To get skills for community/voluntary work"> To get skills for community/voluntary work </option>
+            <option value="Other reasons"> Other reasons </option>
+          </select>
+        </div>
+        <div class="common_form_field w-100">      
+          <label class="custom_checkbox_style">I have read and agree with the <a href="#" target="_blank">privacy statement and student declaration</a>
+            <input type="checkbox" name="contact[Agree Privacy Statement]">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_checkbox_style">I have read and agree to the enrolment <a href="#" target="_blank">privacy notice</a>
+            <input type="checkbox" name="contact[Agree Privacy Notice]">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_checkbox_style">I have read and agree to the  <a href="#" target="_blank">cancellation and refund policy</a>
+            <input type="checkbox" name="contact[Agree Cancellation Refund Policy]">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom_checkbox_style">I have read the <a href="#" target="_blank">terms and conditions</a>
+            <input type="checkbox" name="contact[Agree Terms]">
+            <span class="checkmark"></span>
+          </label>          
+        </div>
+        <div class="common_form_field w-100 declaration_check">      
+          <h2>Student Declaration and Consent</h2>
+          <label class="custom_checkbox_style">I declare that the information I have provided to the best of my knowledge is true and correct. I consent to the collection, use and disclosure of my personal information in accordance with the Privacy Notice.
+            <input type="checkbox" name="contact[Final Declaration]">
+            <span class="checkmark"></span>
+          </label>          
+        </div>
+        <h2>Electronic Signature</h2>
+        <div class="form_column2 mb15">
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[Signature Name]" placeholder="Student's Full Name" >
+          </div>        
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[Signature Date]" placeholder="Today's Date" >
+          </div>
+        </div>
+        <div class="common_form_field w-100">
+          <h2>Parent / Guardian Signature</h2>
+          <p>Parental/guardian consent is required for all students under the age of 18.</p>
+        </div>
+        <div class="form_column2 mb15">
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[Parent Signature Name]" placeholder="Parent/Guardian Full Name" >
+          </div>        
+          <div class="common_form_field">
+            <input class="common_form__input" type="text" name="contact[Parent Signature Date]" placeholder="Today's Date" >
+          </div>
+        </div>
+        <div class="common_form_btnfield w-100"> 
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+      {%- endform -%}
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('.countrybirthopt [name="contact[Country Of Birth]"]').change(function(){
+    if ($('.otherbirth').is(':checked')) {
+       $('.country_specify').show();
+    }else{
+      $('.country_specify').hide();
+    }
+  });
+  $('.languageopt [name="contact[Other Languages]"]').change(function(){
+    if ($('.languageoptyes').is(':checked')) {
+       $('.please_specify').show();
+    }else{
+      $('.please_specify').hide();
+    }
+  });
+  $('.disability_opt [name="contact[Disability]"]').change(function(){
+    if ($('.disability_yes').is(':checked')) {
+       $('.disability_list').show();
+    }else{
+      $('.disability_list').hide();
+    }
+  });  
+});
+</script>
+
+
+{% schema %}
+  {
+    "name": "Enrolment Form A2(New)",
+    "settings": [
+      
+    ],
+    "presets": [
+      {
+        "name": "Enrolment Form A2(New)"
+      }
+    ]
+  }
+{% endschema %}

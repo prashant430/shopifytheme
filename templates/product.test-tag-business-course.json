@@ -1,0 +1,256 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_liquid_Tikp4V": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div>\n<a href=\"/pages/business-course-register\"><button type=\"submit\" class=\"button mtb20\">Enrol Now</button></a>\n</div>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "dropdown",
+            "first_option_button": true
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "custom_liquid_nFRW8q": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"question\">\n\t<img src=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/iinfo-con.jpg?v=1706063788\" alt=\"\" width=\"20\" height=\"20\" loading=\"lazy\">Call <a href=\"tel:1300393583\">1300 393 583</a> or <a href=\"enquiries@testandtagtraining.com.au\">email</a> us if you would like to discuss how we can help your business.</a>\n</p>"
+          }
+        },
+        "collapsible_tab_RUBEc8": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Course Detail",
+            "icon": "none",
+            "content": "",
+            "page": "business-test-tag-course"
+          }
+        },
+        "collapsible_tab_aUKp3U": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What you'll learn",
+            "icon": "none",
+            "content": "<p>This nationally recognised course will give you the required practical know-how to get your Test and Tag business up and running.</p><ul><li>How to set up a business</li><li>Legal Obligations</li><li>WHS – Workplace Health and Safety Regulation</li><li>Taxation</li><li>Risk management in a Test and Tag business</li><li>Contracts and Insurance</li><li>How to structure your prices</li><li>Competitor analysis</li><li>Marketing your Test and Tag services</li><li>Retaining customers and growing your Test and Tag business</li></ul><p><strong>Section 1</strong> – How to set up a business</p><p><strong>Section 2</strong> – How a business complies with laws and regulations</p><p><strong>Section 3</strong> – Business Contracts and overview of the Test and Tag industry in Australia</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_A3PDWY": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Requirements",
+            "icon": "none",
+            "content": "<p>This course is suitable for anyone who has already completed a Test and Tag Course, meaning they have the know-how and skills to test and tag. Once this has been attained, you can enter the Test & Tag Business Course.<br/><br/><strong>For residents of Queensland, this course unit fulfils the requirements for a Restricted Electrical Contractors Licence.</strong><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_zJeFGd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Why use us?",
+            "icon": "none",
+            "content": "<p>Being Australia’s largest Test & Tag training provider, we believe in giving our students all the practical skills, support and expert advice they require that lasts long after the course is complete. We’ll be there with you on your entire test and tag pathway to ensure you succeed.</p><ul><li>Receive lifetime support from our test and tag experts</li><li>We link the skills of running a business to the test and tag industry</li><li>All of our trainers are industry specialists, approachable and very friendly</li><li>Our classes are purposely kept small to ensure you are given the help you need</li><li>Receive special discounts on our Portable Appliance Tester range<br/><br/></li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "description",
+        "price",
+        "custom_liquid_Tikp4V",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share",
+        "custom_liquid_nFRW8q",
+        "collapsible_tab_RUBEc8",
+        "collapsible_tab_aUKp3U",
+        "collapsible_tab_A3PDWY",
+        "collapsible_tab_zJeFGd"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "video_AmkinB": {
+      "type": "video",
+      "settings": {
+        "heading": "Student Testimonials",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/NYG-_IgcmoM",
+        "cover_image": "shopify://shop_images/test-tag-business-course.jpg",
+        "description": "Test & Tag Business Course - Testimonials",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_aqyrc4": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_jP3dUU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "1. Question 1",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_9amYtn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "2. Question 2",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_YAFc4k": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "3. Question 3",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_DhYd67": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "4. Question 4",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_wgai4y": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "5. Question 5",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_jP3dUU",
+        "collapsible_row_9amYtn",
+        "collapsible_row_YAFc4k",
+        "collapsible_row_DhYd67",
+        "collapsible_row_wgai4y"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_AmkinB",
+    "collapsible_content_aqyrc4",
+    "related-products"
+  ]
+}

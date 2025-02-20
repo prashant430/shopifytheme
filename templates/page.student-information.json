@@ -1,0 +1,179 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 16
+      }
+    },
+    "collapsible_content_yeyHV3": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_cCntK4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Enrolment & Payment",
+            "icon": "none",
+            "row_content": "<p>In order to secure course bookings, payment must be received at least 5 working days prior to the start date of the course. In the event of the course being cancelled or postponed by more than 4 weeks, all fees will be refunded.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_RmbXVC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Complaints & Appeals Policy & Procedure",
+            "icon": "none",
+            "row_content": "<p>Test & Tag Training believes that a student who has a complaint has the right to raise the complaint and expects that every effort will be made to resolve it in accordance with this policy, without prejudice or fear of reprisal or victimisation. The student has the right to present the complaint or appeal informally as well as in writing.<br/><br/>To lodge a formal complaint or provide feedback, please download the <a href=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/ET_Complaints_and_Appeals_Form_MAR_2024editable.pdf?v=1724820601\" target=\"_blank\" title=\"Complains and Appeals Form\">Complaints and Appeals Form</a> and please email admin@testandtagtraining.com.au or submit in writing to:<br/><br/>Test & Tag Training<br/>8 Mosrael Place, Rowville, VIC 3178<br/><br/>To view our full Policy & Procedure, download the <a href=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/Policy_Complaints_Appeals_Procedure_V2_1_APR_2024.pdf?v=1725242079\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/Policy_Complaints_Appeals_Procedure_V2_1_APR_2024.pdf?v=1725242079\">Complaints & Appeals Policy & Procedure</a>.<br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ihJcFW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Refund Policy",
+            "icon": "none",
+            "row_content": "<p><strong>Course Cancellation or Postponement:</strong><br/><br/>If a course is cancelled or postponed by more than 4 weeks, all fees will be fully refunded.</p><p><br/><strong>Withdrawal Prior to Course Commencement:</strong><br/><br/>To withdraw from a course before it begins and obtain a full refund, students must notify our administration office at least five (5) working days prior to the course start date.<br/>If a withdrawal occurs within five (5) working days before the course starts, 50% of the course fee will be refunded.</p><p><br/><strong>Course Transfers:</strong><br/><br/>Students who wish to transfer their booking to a later course must do so at least 5 days before their scheduled course date.<br/>In the case of a transfer, course fees will be transferred to the next available course.<br/>Please note that students are allowed to transfer only once.<br/>An administration fee of $50+ (GST) may apply in cases of withdrawal (cancellation or transfer). The application of this fee will be assessed on a case-by-case basis.</p><p><br/><strong>No Refund After Course Commencement:</strong><br/><br/>Once a course has commenced, no refunds will be given for withdrawals.</p><p><strong><br/>Online Courses:</strong><br/><br/>For online courses, once a user has been sent their login details, the course is considered commenced, and no refunds will apply.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_cCntK4",
+        "collapsible_row_RmbXVC",
+        "collapsible_row_ihJcFW"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Terms & Conditions",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_ceLDKn": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_jg8BPx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Pre-Enrolment information",
+            "icon": "none",
+            "row_content": "<p>For students preparing to complete our course, please download the full <a href=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/Student_PreEnrolment_Information_Kit_V2_1_20240502.pdf?v=1725236735\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/Student_PreEnrolment_Information_Kit_V2_1_20240502.pdf?v=1725236735\">Student Pre-Enrolment Information Kit</a>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nAKWe3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Victorian Student Number (VSN)",
+            "icon": "none",
+            "row_content": "<p>The VSN is a student identification number that is assigned by the Department of Education & Early Childhood Development. The number is unique to each student & will be used as a key identifier on student's school records until reaching the age of 25.<br/><br/>The VSN only applies to students under the age of 25 who reside in the State of Victoria. For more information, please visit <a href=\"https://www.vcaa.vic.edu.au/Pages/HomePage.aspx\" title=\"https://www.vcaa.vic.edu.au/Pages/HomePage.aspx\">The Victorian Curriculum and Assessment Authority</a> website or <a href=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/VSN-information-for-student.pdf?v=1706559457\" title=\"The Victorian Student Number\">download</a> the information booklet The Victorian Student Number.<br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_kpWetL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "USI Information",
+            "icon": "none",
+            "row_content": "<p>From 1 January 2015, each student will need a Unique Student Identifier (USI) to obtain their certificate or qualification from a Registered Training Organisation. This will apply when undertaking our Nationally Recognised Test and Tag Course.<br/><br/>It's a free and easy process for students to create their own USI's online. To do this, please go to the <a href=\"https://www.usi.gov.au/\" title=\"Unique Student Identifier\">Unique Student Identifier</a> home page. If you require any further information, please feel free to <a href=\"/pages/contact\" title=\"Contact\">contact us</a> during business hours.</p><p><strong>Helpful Links</strong></p><ul><li>The student webpage on <a href=\"https://usi.gov.au/students/training-records-and-transcript\" target=\"_blank\" title=\"https://usi.gov.au/students/training-records-and-transcript\">Transcript/Training records</a></li><li>The <a href=\"https://usi.gov.au/video/how-view-and-download-my-usi-transcript\" target=\"_blank\" title=\"https://usi.gov.au/video/how-view-and-download-my-usi-transcript\">'How to view and download my USI transcript'</a> video</li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_jg8BPx",
+        "collapsible_row_nAKWe3",
+        "collapsible_row_kpWetL"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Student Information",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_MUqfXq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_KHJrN6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Personal Information",
+            "icon": "none",
+            "row_content": "<p><strong>Why we collect your personal information</strong><br/><br/>As a registered training organisation (RTO), we collect your personal information so we can process and manage your enrolment in a vocational education and training (VET) course with us.<br/><br/><strong>How we use your personal information</strong><br/><br/>We use your personal information to enable us to deliver VET courses to you, and otherwise, as needed, to comply with our obligations as an RTO.<br/><br/><strong>How we disclose your personal information</strong><br/><br/>We are required by law (under the National Vocational Education and Training Regulator Act 2011 (Cth) (NVETR Act)) to disclose the personal information we collect about you to the National VET Data Collection kept by the National Centre for Vocational Education Research Ltd (NCVER). The NCVER is responsible for collecting, managing, analysing and communicating research and statistics about the Australian VET sector.<br/><br/>We are also authorised by law (under the NVETR Act) to disclose your personal information to the relevant state or territory training authority.<br/><br/><strong>How the NCVER and other bodies handle your personal information</strong><br/><br/>The NCVER will collect, hold, use and disclose your personal information in accordance with the law, including the Privacy Act 1988 (Cth) (Privacy Act) and the NVETR Act. Your personal information may be used and disclosed by NCVER for purposes that include populating authenticated VET transcripts; administration of VET; facilitation of statistics and research relating to education, including surveys and data linkage; and understanding the VET market.<br/><br/>The NCVER is authorised to disclose information to the Australian Government Department of Education, Skills and Employment (DESE), Commonwealth authorities, State and Territory authorities (other than registered training organisations) that deal with matters relating to VET and VET regulators for the purposes of those bodies, including to enable:</p><ul><li>administration of VET, including program administration, regulation, monitoring and evaluation</li><li>facilitation of statistics and research relating to education, including surveys and data linkage</li><li>understanding how the VET market operates, for policy, workforce planning and consumer information.<br/></li></ul><p>The NCVER may also disclose personal information to persons engaged by NCVER to conduct research on NCVER’s behalf.<br/><br/>The NCVER does not intend to disclose your personal information to overseas recipients.<br/><br/>For more information about how the NCVER will handle your personal information, please refer to the <a href=\"https://www.ncver.edu.au/privacy\" title=\"https://www.ncver.edu.au/privacy\">NCVER’s Privacy Policy</a>.<br/><br/>If you would like to seek access to or correct your information, in the first instance, please contact your RTO using the contact details listed below.<br/><br/>DESE is authorised by law, including the Privacy Act and the NVETR Act, to collect, use and disclose your personal information to fulfil specified functions and activities. For more information about how the DESE will handle your personal information, please refer to the <a href=\"https://www.dewr.gov.au/national-vet-data/vet-privacy-notice\" title=\"https://www.dewr.gov.au/national-vet-data/vet-privacy-notice\">DESE VET Privacy Notice</a>. <br/><br/><strong>Surveys</strong><br/><br/>You may receive a student survey which may be run by a government department or an NCVER employee, agent, third-party contractor or another authorised agency. Please note you may opt out of the survey at the time of being contacted.<br/><br/><strong>Contact information</strong><br/><br/>At any time, you may <a href=\"/pages/contact\" title=\"Contact Us\">contact Test & Tag Training</a> to:</p><ul><li>request access to your personal information</li><li>correct your personal information</li><li>make a complaint about how your personal information has been handled</li><li>ask a question about this Privacy Notice</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_q66zYY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Privacy Statement & Student Declaration",
+            "icon": "none",
+            "row_content": "<p>Under the Data Provision Requirements 2012, Test & Tag Training is required to collect personal information about you and to disclose that personal information to the National Centre for Vocational Education Research Ltd (NCVER).<br/><br/>Your personal information (including the personal information contained on this enrolment form and your training activity data) may be used or disclosed by Test & Tag Training Pty Ltd for statistical, regulatory and research purposes.<br/><br/>EXELTrain Pty Ltd may disclose your personal information for these purposes to third parties, including:</p><ul><li>School – if you are a secondary student undertaking VET, including a school-based apprenticeship or traineeship;</li><li>Employer-if you are enrolled in training paid by your employer;</li><li>Commonwealth and State or Territory government departments and authorised agencies;</li><li> NCVER;</li><li>Organisations conducting student surveys; and<br/>Researchers</li></ul><p>Personal information disclosed to NCVER may be used or disclosed for the following purposes:</p><ul><li>Issuing statements of attainment or qualification, and populating authenticated VET transcripts;</li><li>Facilitating statistics and research relating to education, including surveys;</li><li>Understanding how the VET market operates, for policy, workforce planning and consumer information;</li><li>Administering VET, including programme administration, regulation, monitoring and evaluation.</li></ul><p>You may receive an NCVER student survey, which may be administered by an NCVER employee, agent or third-party contractor. You may opt out of the survey at the time of being contacted.<br/><br/>NCVER will collect, hold, use and disclose your personal information in accordance with the Privacy Act 1988 (Cth), the VET Data Policy and all NCVER policies and protocols (including those published on <a href=\"https://www.ncver.edu.au/\" title=\"https://www.ncver.edu.au/\">NCVER’s website</a>).</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fPrTMJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "State and Territory Privacy Notices",
+            "icon": "none",
+            "row_content": "<p><a href=\"/pages/enrolment-privacy-notice-vic\" title=\"Enrolment Privacy Notice (Victoria)\">Enrolment Privacy Notice (Victoria)</a></p><p><a href=\"https://ttt-au.myshopify.com/pages/enrolment-privacy-notice-other-states\" title=\"Enrolment Privacy Notice (QLD, WA, SA, NSW) \">Enrolment Privacy Notice (QLD, WA, SA, NSW) </a></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_KHJrN6",
+        "collapsible_row_q66zYY",
+        "collapsible_row_fPrTMJ"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Privacy Policies",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_yeyHV3",
+    "collapsible_content_ceLDKn",
+    "collapsible_content_MUqfXq"
+  ]
+}

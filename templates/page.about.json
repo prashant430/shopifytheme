@@ -1,0 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "page_bYMeVd": {
+      "type": "page",
+      "settings": {
+        "page": "about-us",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_74AUCa": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/FSTkD0pTyfw?rel=0",
+        "cover_image": "shopify://shop_images/about-us-video.jpg",
+        "description": "https://youtu.be/FSTkD0pTyfw",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 16
+      }
+    },
+    "custom_liquid_eafQWH": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<h3>Registered Training Organisation</h3>\n<p>\n    As a Registered Training Organisation (RTO number: 40604), we are fully accredited and our training is Nationally Recognised.\n</p>\n<p>\n    As we deliver across several different states and territories, we adhere to the guidelines of \n    <a href=\"https://www.asqa.gov.au/\">ASQA - Australian Skills Quality Authority</a>. This ensures that our processes and quality control are of the highest standard and regularly monitored by our governing body.\n</p>\n<p>\n    All of our Trainers hold at least a Certificate IV in Training & Assessment and have years of experience Testing and Tagging. We also have an experienced team of test and tag specialists that come from various facets of the electrical industry.\n</p>\n\n<h3>Training Facilities</h3>\n<p>\n    We have specifically selected training venues in Melbourne, Sydney, Adelaide, Perth, and Brisbane to cater for participants across Australia and to provide national consistency for large companies who have employees throughout the country.\n</p>\n<p>\n    All venues have ample parking and our training rooms are large enough to simulate many testing scenarios. We also have most venues fitted with 3 Phase power to enable us to deliver hands-on testing with true 3 Phase power.\n</p>\n<p>\n    To ensure there's different learning formats, we also have an online test and tag course. This allows students to participate via a virtual classroom with our instructor from anywhere in Australia.\n</p>\n\n<h3>Test & Tag Machines</h3>\n<p>\n    Along with conducting test and tag courses, we also have an appliance tester division that stocks a complete range of all the testers on the market. \n    <a href=\"http://www.portableappliancetesters.com.au/\">Appliance Testing Supplies</a> is our sister company and is widely regarded as the premier online store for test and tag equipment and supplies. You can be sure that any student that goes through our training course goes on and gets great deals for any equipment required afterward.\n</p>\n\n<h3>Our Reviews</h3>\n<p>\n    Any student that undertakes a course with Test & Tag Training is asked to give a review at the conclusion of the course. We're proud to state that we have over 2500 reviews from real students all over Australia, with an overall rating of 4.7 out of 5. \n</p>\n</div>",
+        "color_scheme": "",
+        "padding_top": 28,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_RcrXNM": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\">\n<!-- TrustBox widget - Carousel -->\n<div class=\"trustpilot-widget\" data-locale=\"en-AU\" data-template-id=\"53aa8912dec7e10d38f59f36\" data-businessunit-id=\"56bab5e20000ff000588b9fa\" data-style-height=\"140px\" data-style-width=\"100%\" data-stars=\"4,5\" data-review-languages=\"en\">\n  <a href=\"https://au.trustpilot.com/review/testandtagtraining.com.au\" target=\"_blank\" rel=\"noopener\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget -->\n</div>",
+        "color_scheme": "",
+        "padding_top": 16,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "page_bYMeVd",
+    "video_74AUCa",
+    "custom_liquid_eafQWH",
+    "custom_liquid_RcrXNM"
+  ]
+}

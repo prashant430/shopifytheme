@@ -1,0 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "video_BNP3cH": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/Iirhc1E0SSE",
+        "cover_image": "shopify://shop_images/test-tag-laptop.jpg",
+        "description": "How to Test and Tag a Laptop",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_HFrtfQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<p>Testing and tagging a laptop involves doing it in two parts: it includes testing both the IEC lead and laptop charger, with each one receiving its own test tag.</p>\n<p>The laptop itself doesn't need to be electrically tested, as it is considered a low voltage item. It will however still require a visual inspection.</p>\n<h2>Testing the IEC lead</h2>\n<p>There is a wide variety of IEC leads that connect to the laptop charger. This means that some will require an adaptor to plug the lead into your Portable Appliance Tester.</p>\n<p>The main types are:</p>\n<ul>\n<li>Clover leaf - requires adaptor</li>\n<li>Figure 8 - requires adaptor</li>\n<li>Standard IEC connections - no adaptor required</li>\n<li>Apple chargers - no adaptor available</li>\n</ul>\n<p>The tests you are required to perform on the IEC lead includes the <strong>Earth Continuity, Insulation Resistance and Polarity Test</strong>. The only exception would be the Figure 8, as it only requires an Insulation Test.</p>\n<h2>Testing the Laptop Charger</h2>\n<p>There are no obvious markings on the charger that state if it's a Class I or Class II appliance. As a result, you must first put the laptop charger through a Class I test. If this test fails, you will need to perform a Class II Double Insulated or Leakage Test.</p>\n<p>The reason why this test would fail is because some laptop chargers have an encapsulated earth - meaning the earth enters the charger and is not connected to any exposed metal parts.</p>\n<p>Please note: the video focuses specifically on an IEC clover leaf connection.</p>\n<p>If you found this guide useful, you might also find it beneficial to see our video on how to <a href=\"/pages/test-tag-computer\">test and tag a computer</a>.</p>\n<table class=\"prev-next\">\n<tbody>\n<tr>\n<td><a href=\"/pages/test-tag-kettle\">&lt;&lt; How to Test and Tag a Kettle</a></td>\n<td class=\"right\"><a href=\"/pages/test-tag-vacuum-cleaner\">How to Test and Tag a Vacuum Cleaner &gt;&gt;</a></td>\n</tr>\n</tbody>\n</table>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_BNP3cH",
+    "custom_liquid_HFrtfQ"
+  ]
+}

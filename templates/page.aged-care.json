@@ -1,0 +1,133 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_QCRCd3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_RCCRgM": {
+          "type": "heading",
+          "settings": {
+            "heading": " <strong>Case Study: Mercy Health Aged Care </strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_zzkpVm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Mercy Health Aged Care, the commitment to safety and the welfare of their residents has always been a top priority. In their journey to enhance safety measures and efficiency, Mercy Health Aged Care made a strategic decision to have their maintenance officers handle testing and tagging internally. This move significantly reduced their dependence on external contractors, saving costs while equipping their staff with essential skills.<br/><br/>Since 2016, <strong>they've purchased 50 PAT testers, trained 50 staff, conducted 38 tester calibrations, and applied 7000 New to Service tags</strong>, ensuring the highest safety standards for their residents and employees. Their success story is a testament to the power of internal testing and tagging in aged care facilities.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_gkDbp9": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RCCRgM",
+        "text_zzkpVm",
+        "button_gkDbp9"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/mercy-care.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_naxADJ": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_cb69py": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the importance of testing and tagging in aged care?",
+            "icon": "none",
+            "row_content": "<p>Regular testing and tagging of electrical equipment is crucial to ensure the safety of residents and staff. It helps identify faulty appliances, reducing the risk of electrical accidents that can cause harm to vulnerable residents. By regularly testing appliances, you can ensure that they work safely, providing peace of mind to both residents and caregivers. As per the Australian Safety Standards this is not just a preference, but a necessity to maintain a secure environment.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GnPfe4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can internal testing save costs for my aged care facility?",
+            "icon": "none",
+            "row_content": "<p>Conducting internal testing can result in significant cost savings since it eliminates the need to hire external contractors. By training your own staff to handle testing and tagging, you can minimize the expenses associated with outsourcing services, which can help you make the most of your budget while still maintaining safety standards. Additionally, this approach allows you to equip your staff with valuable skills.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9hRtpP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What ongoing support can you expect from our team?",
+            "icon": "none",
+            "row_content": "<p>Our team is dedicated to your success even after you complete the course. We offer complete <a href=\"/pages/lifetime-support\" title=\"Lifetime Support, Guaranteed.\">lifetime support</a>, ensuring you have assistance, guidance, and resources whenever needed. If you have questions, encounter challenges, or require further clarification, our team is just a call or email away, providing the support you need for continued safety.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UPd3a6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any specific technical requirements for taking the Course?",
+            "icon": "none",
+            "row_content": "<p>Our Course covers both theoretical and practical aspects of test and tag training. To ensure a comprehensive learning experience, it's mandatory to have access to a PAT Tester for hands-on training. If you don't already have one, no worries! You can <a href=\"https://www.portableappliancetesters.com.au/\" title=\"Portable Appliance Testers\">buy a PAT Tester</a> from us to enhance your learning and practical skills during the course.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_cb69py",
+        "collapsible_row_GnPfe4",
+        "collapsible_row_9hRtpP",
+        "collapsible_row_UPd3a6"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_QCRCd3",
+    "collapsible_content_naxADJ"
+  ]
+}

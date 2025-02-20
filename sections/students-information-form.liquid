@@ -1,0 +1,976 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+    .contact__fields_new hr {
+      margin: 40px 0px;
+  }
+    .contact__fields_new .field_desc h3 {
+      font-weight: 600;
+      font-size: 25px;
+  }
+    .contact__fields_new {
+      color: #000;
+  }
+    .contact__fields_new .field_cols  a
+  {
+    text-decoration:none;
+    font-weight:bold;
+    color:#58a618;
+  }
+    .contact__fields_new .field_cols {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        column-gap: 20px;
+    }
+       .contact__fields_new .field_desc p {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+       .contact__fields_new .field_desc {
+        width: 100%;
+    }
+     .contact__fields_new .field_cols .field_new.field_full
+    {
+      width:100%;
+    }
+      .contact__fields_new .field_cols .field_new {
+        width: calc(50% - 10px);
+        padding: 10px 0px;
+    }
+    .field_with_text input, .field_with_text select, .field_with_text textarea {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #999;
+    font-size: 16px;
+    line-height: 1.3em;
+    outline: none;
+    box-shadow: none;
+}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+    @media screen and (max-width: 767px) {
+      .contact__fields_new .field_cols .field_new {
+          width: 100%;
+      }
+    }
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+    .field__input2{
+      padding: 0rem 0rem 0rem 2rem!important;
+
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="contact page-width  section-{{ section.id }}-padding">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+       <strong> {{ section.settings.heading }}</strong>
+      </h2>
+    {%- else -%}
+      <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
+    {%- endif -%}
+    {%- liquid
+      assign contact_form_class = 'isolate'
+      if settings.animations_reveal_on_scroll
+        assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
+      endif
+    -%}
+    {%- assign formID = 'ContactForm_info' -%}
+    {%- form 'contact', id: 'ContactForm_info', class: contact_form_class -%}
+      {%- if form.posted_successfully? and formID == 'ContactForm_info' -%}
+        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+          {% render 'icon-success' %}
+          {{ 'templates.contact.form.post_success' | t }}
+        </h2>
+      {%- elsif form.errors -%}
+        <div class="form__message">
+          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+            {% render 'icon-error' %}
+            {{ 'templates.contact.form.error_heading' | t }}
+          </h2>
+        </div>
+        <ul class="form-status-list caption-large" role="list">
+          <li>
+            <a href="#ContactForm-email" class="link">
+              {{ form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email }}
+            </a>
+          </li>
+        </ul>
+      {%- endif -%}
+      <div class="contact__fields_new">
+        <div class="contact__fields_new">
+          <div class="field_cols">
+            <div class="field_new">
+              <div class="line-item-property__field field_with_text">
+                <label for="what-is-your-course-date">What is your course date:</label>
+                <input id="what-is-your-course-date" type="date" class="hasDatepicker" name="contact[What is your course date]">
+              </div>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_desc">
+              <p>Please write your name you use for your Unique Student Identifer (USI), including any middle names</p>
+            </div>
+            <div class="field_new">
+              <div class="line-item-property__field field_with_text">
+                <label for="surname" class="label_hidden">Surname</label>
+                <input id="surname" required class="required" type="text" name="contact[Surname]">
+              </div>
+            </div>
+            <div class="field_new">
+              <div class="line-item-property__field field_with_text">
+                <label for="first-name" class="label_hidden">First Name</label>
+                <input id="first-name" required class="required" type="text" name="contact[First Name]">
+              </div>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new">
+              <div class="line-item-property__field field_with_text">
+                <label>Title</label><br>
+                <select id="title" name="contact[Title]">
+                  <option value="Title">Title</option>
+                  <option value="Mr">Mr</option>
+                  <option value="Mrs">Mrs</option>
+                  <option value="Miss">Miss</option>
+                  <option value="Ms">Ms</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="field_cols">
+            <div class="field_new">
+              <div class="line-item-property__field field_with_text">
+                <label for="postal-address">Postal Address</label>
+                <input  id="postal-address" type="text" name="contact[Postal Address]">
+              </div>
+            </div>
+            <div class="field_new">
+              <div class="line-item-property__field field_with_text">
+                <label for="postal-suburb">Postal Suburb</label>
+                <input   id="postal-suburb" type="text" name="contact[Postal Suburb]">
+              </div>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new">
+              <div class="line-item-property__field field_with_text">
+                <label>Postal State</label><br>
+                <select
+                 
+                  id="postal-state"
+                  name="contact[Postal State]"
+                  onchange="if($(this).val()!='VIC') {$('.vsn_area').hide();} else { $('.vsn_area').show(); }"
+                >
+                  <option value="Postal State">Postal State</option>
+                  <option value="ACT">ACT</option>
+                  <option value="NSW">NSW</option>
+                  <option value="NT">NT</option>
+                  <option value="QLD">QLD</option>
+                  <option value="SA">SA</option>
+                  <option value="TAS">TAS</option>
+                  <option value="VIC">VIC</option>
+                  <option value="WA">WA</option>
+                </select>
+              </div>
+            </div>
+            <div class="field_new"></div>
+          </div>
+          <hr>
+          <div class="field_cols">
+            <div class="field_new">
+              <div class="line-item-property__field field_with_text">
+                <label for="telephone-home">Telephone (home)</label>
+                <input id="telephone-home" type="tel" name="contact[Telephone (home)]">
+              </div>
+            </div>
+            <div class="field_new">
+              <div class="line-item-property__field field_with_text">
+                <label for="telephone-work">Telephone (work)</label>
+                <input id="telephone-work" type="tel" name="contact[Telephone (work)]">
+              </div>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new">
+              <div class="line-item-property__field field_with_text">
+                <label for="telephone-mobile">Telephone (mobile)</label>
+                <input
+                  id="telephone-mobile"
+                  required
+                  class="required"
+                  type="tel"
+                  name="contact[Telephone (mobile)]"
+                >
+              </div>
+            </div>
+            <div class="field_new">
+              <div class="line-item-property__field field_with_text">
+                <label for="ContactForm-email">Email</label>
+                  <input
+                      autocomplete="email"
+                      type="email"
+                       required class="required"
+                      id="ContactForm-email"
+                      class="field__input"
+                      name="contact[email]"
+                      spellcheck="false"
+                      autocapitalize="off"
+                      value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                      aria-required="true"
+                      {% if form.errors contains 'email' %}
+                        aria-invalid="true"
+                        aria-describedby="ContactForm-email-error"
+                      {% endif %}
+                      placeholder="{{ 'templates.contact.form.email' | t }}"
+                    >
+                <!-- <input id="email" required class="required" type="email" name="contact[Email]"> -->
+              </div>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new">
+              <div class="line-item-property__field field_with_text">
+                <label for="date-of-birth">Date Of Birth</label>
+                <input id="date-of-birth" required class="required" type="text" name="contact[Date Of Birth]">
+              </div>
+            </div>
+            <div class="field_new">
+              <div class="line-item-property__field">
+                <label>Country of birth: </label><br>
+                <input
+                  type="radio"
+                  required
+                  class="required"
+                  name="contact[Country of birth: ]"
+                  value="Australia"
+                  onclick="$('.cob-other').hide();"
+                >
+                <span>Australia</span>
+                <input
+                  type="radio" 
+                  name="contact[Country of birth: ]"
+                  value="Other"
+                  onclick="$('.cob-other').show();"
+                >
+                <span>Other</span>
+
+                <div class="field_with_text cob-other" style="display:none;">
+                  <input
+                    id="other-country"
+                    type="text"
+                    placeholder="Please Specify"
+                    name="contact[Other Country]"
+                    class=" show_on_other"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="field_cols">
+            <div class="field_desc">
+              <h3>AVETMISS Information Collection (RTO Compliance Requirement)</h3>
+            </div>
+            <div class="field_new field_full">
+              <div class="line-item-property__field  ">
+                <label>Do you speak a language other than English at home?</label><br>
+                <input 
+                  type="radio"
+                  name="contact[Do you speak a language other than English at home?]"
+                  value="Yes"
+                  onclick="$('.other_languages_yes').show();"
+                >
+                <span>Yes</span>
+                <input 
+                  type="radio"
+                  name="contact[Do you speak a language other than English at home?]"
+                  value="No(English Only)"
+                  onclick="$('.other_languages_yes').hide();"
+                >
+                <span>No(English Only)</span>
+              </div>
+              <div class="field_with_text other_languages_yes" style="display: none;">
+                <label>Please specify:</label>
+                <input
+                  id="other-languages"
+                  type="text"
+                  placeholder="Other Language(s)"
+                  name="contact[Other Languages]"
+                  class=" "
+                >
+              </div>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new field_full field_with_text">
+              <label>How well do you speak English?</label><br>
+              <select id="how-well-do-you-speak-english" name="contact[How well do you speak English?]">
+                <option value="Very Well">Very Well</option>
+                <option value="Well">Well</option>
+                <option value="Not Well">Not Well</option>
+                <option value="Not at all">Not at all</option>
+              </select>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new field_full">
+              <label>Are you of Aboriginal or Torres Strait Islander Origin?</label><br>
+              <input type="radio" name="contact[Are you of Aboriginal or Torres Strait Islander Origin?]" value="No">
+              <span>No</span>
+              <input
+                type="radio"
+                name="contact[Are you of Aboriginal or Torres Strait Islander Origin?]"
+                value="Yes - Aboriginal"
+              >
+              <span>Yes - Aboriginal</span>
+              <input
+                type="radio"
+                name="contact[Are you of Aboriginal or Torres Strait Islander Origin?]"
+                value="Yes - Torres Strait Islander"
+              >
+              <span>Yes - Torres Strait Islander</span>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new field_full">
+              <label>Do you consider yourself to have a disability, impairment or long-term condition?</label><br>
+              <input
+                type="radio"
+                name="contact[Do you consider yourself to have a disability, impairment or long-term condition?]"
+                value="Yes"
+                onclick="$('.disability_yes').show();"
+              >
+              <span>Yes</span>
+              <input
+                type="radio"
+                name="contact[Do you consider yourself to have a disability, impairment or long-term condition?]"
+                value="No"
+                onclick="$('.disability_yes').hide();"
+              >
+              <span>No</span>
+            </div>
+            <div class="field_new field_full disability_yes" style="display: none;">
+              <label
+                >Please indicate areas of disability, impairment or long-term condition. You may indicate more than one
+                option:</label
+              ><br>
+              <input
+                type="checkbox"
+                id="Hearing/Deaf"
+                hidden-data="Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:"
+                onchange="fillHidden('Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:')"
+                value="Hearing/Deaf"
+
+              ><label for="Hearing/Deaf">Hearing/Deaf</label><br>
+              <input
+                type="checkbox"
+                id="Physical"
+                hidden-data="Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:"
+                onchange="fillHidden('Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:')"
+                value="Physical"
+
+              ><label for="Physical">Physical</label><br>
+              <input
+                type="checkbox"
+                id="Intellectual"
+                hidden-data="Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:"
+                onchange="fillHidden('Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:')"
+                value="Intellectual"
+
+              ><label for="Intellectual">Intellectual</label><br>
+              <input
+                type="checkbox"
+                id="Learning"
+                hidden-data="Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:"
+                onchange="fillHidden('Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:')"
+                value="Learning"
+
+              ><label for="Learning">Learning</label><br>
+              <input
+                type="checkbox"
+                id="Mental-Illness"
+                hidden-data="Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:"
+                onchange="fillHidden('Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:')"
+                value="Mental Illness"
+
+              ><label for="Mental-Illness">Mental Illness</label><br>
+              <input
+                type="checkbox"
+                id="Acquired-Brain Impairment"
+                hidden-data="Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:"
+                onchange="fillHidden('Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:')"
+                value="Acquired Brain Impairment"
+
+              ><label for="Acquired-Brain Impairment">Acquired Brain Impairment</label><br>
+              <input
+                type="checkbox"
+                id="Vision"
+                hidden-data="Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:"
+                onchange="fillHidden('Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:')"
+                value="Vision"
+
+              ><label for="Vision">Vision</label><br>
+              <input
+                type="checkbox"
+                id="Medical-Condition"
+                hidden-data="Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:"
+                onchange="fillHidden('Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:')"
+                value="Medical Condition"
+
+              ><label for="Medical-Condition">Medical Condition</label><br>
+              <input
+                type="checkbox"
+                id="Other"
+                hidden-data="Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:"
+                onchange="fillHidden('Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:')"
+                value="Other"
+
+              ><label for="Other">Other</label><br>
+              <input
+                type="hidden"
+                id="Please-indicate areas of disability, impairment or long-term condition. You may indicate more than one option:"
+                name="contact[Please indicate areas of disability, impairment or long-term condition. You may indicate more than one option:]"
+              >
+              <script>
+                function fillHidden(hiddenname) {
+                var checkboxes = document.querySelectorAll('[hidden-data="'+hiddenname+'"]');
+                var hiddenfield = document.getElementById(hiddenname);
+                hiddenfield.value = ""
+                var i;
+                for (i = 0; i < checkboxes.length; i++) {
+                  var x = checkboxes[i];
+                  if(x.checked){
+                    if(hiddenfield.value==""){
+                      hiddenfield.value = x.value;
+                      }else{
+                      hiddenfield.value = hiddenfield.value + ", " + x.value;
+                      }
+                    }
+                  }
+                }
+              </script>
+            </div>
+          </div>
+          <hr>
+          <div class="field_cols">
+            <div class="field_desc">
+              <h3>Emergency Contact Person</h3>
+            </div>
+            <div class="field_new field_with_text">
+              <label for="e_name">Name</label>
+              <input id="e_name" type="text" name="contact[Emergency Contact Name]">
+            </div>
+            <div class="field_new field_with_text">
+              <label for="e_phone">Phone</label>
+              <input id="e_phone" type="text" name="contact[Emergency Contact Phone]">
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new field_with_text field_full">
+              <label for="if-you-require-any-form-of-additional-support-or-have-any-special-learning-needs-then-please-outline-below-so-that-assistance-can-be-provided-on-the-day-the-information-provided-will-be-dealt-with-discretion-and-in-strict-confidence-only-for-the-purpose-for-providing-additional-support-during-training-and-assessment-by-exeltrain-example-any-language-literacy-numeracy-issues-and-or-other-support"
+                >If you require any form of additional support or have any special learning needs then please outline
+                below, so that assistance can be provided on the day: (the information provided will be dealt with
+                discretion and in strict confidence only for the purpose for providing additional support during
+                training and assessment by EXELTrain) example - any language, literacy, numeracy issues and or other
+                support.</label
+              >
+              <textarea
+                id="if-you-require-any-form-of-additional-support-or-have-any-special-learning-needs-then-please-outline-below-so-that-assistance-can-be-provided-on-the-day-the-information-provided-will-be-dealt-with-discretion-and-in-strict-confidence-only-for-the-purpose-for-providing-additional-support-during-training-and-assessment-by-exeltrain-example-any-language-literacy-numeracy-issues-and-or-other-support"
+                name="contact[If you require any form of additional support or have any special learning needs then please outline below, so that assistance can be provided on the day: (the information provided will be dealt with discretion and in strict confidence only for the purpose for providing additional support during training and assessment by EXELTrain) example - any language, literacy, numeracy issues and or other support.]"
+              ></textarea>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new field_with_text field_full">
+              <label>What is your highest COMPLETED school level?</label><br>
+              <select
+                id="what-is-your-highest-completed-school-level"
+                name="contact[What is your highest COMPLETED school level?]"
+              >
+                <option value="Completed Year 12">Completed Year 12</option>
+                <option value="Completed Year 11">Completed Year 11</option>
+                <option value="Completed Year 10">Completed Year 10</option>
+                <option value="Completed Year 9 or equivalent">Completed Year 9 or equivalent</option>
+                <option value="Completed Year 8 or Lower">Completed Year 8 or Lower</option>
+                <option value="Never attended school">Never attended school</option>
+              </select>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new field_with_text field_full">
+              <label>Are you still enrolled in secondary or senior secondary education?</label>
+              <select
+                id="are-you-still-enrolled-in-secondary-or-senior-secondary-education"
+                name="contact[Are you still enrolled in secondary or senior secondary education?]"
+              >
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new  field_full">
+              <label>Have you SUCCESSFULLY completed any of the following qualifications?</label><br>
+              <input
+                type="radio"
+                name="contact[Have you SUCCESSFULLY completed any of the following qualifications?]"
+                value="Yes"
+              >
+              <span>Yes</span>
+              <input
+                type="radio"
+                name="contact[Have you SUCCESSFULLY completed any of the following qualifications?]"
+                value="No"
+              >
+              <span>No</span><br>
+            </div>
+            <div class="field_new  field_full ">
+              <label>Qualifications</label><br>
+              <input type="radio" name="contact[Qualifications]" value="Bachelor Degree or Higher Degree">
+              <span>Bachelor Degree or Higher Degree</span><br>
+              <input type="radio" name="contact[Qualifications]" value="Advanced Diploma or Associate Degree">
+              <span>Advanced Diploma or Associate Degree</span><br>
+              <input
+                type="radio"
+                name="contact[Qualifications]"
+                value="Diploma (or Associate Diploma)Certificate IV (or advanced Certificate/Technician)"
+              >
+              <span>Diploma (or Associate Diploma)Certificate IV (or advanced Certificate/Technician)</span><br>
+              <input type="radio" name="contact[Qualifications]" value="Certificate III (or Trade Certificate)">
+              <span>Certificate III (or Trade Certificate)</span><br>
+              <input type="radio" name="contact[Qualifications]" value="Certificate II"> <span>Certificate II</span
+              ><br>
+              <input type="radio" name="contact[Qualifications]" value="Certificate I"> <span>Certificate I</span
+              ><br>
+              <input type="radio" name="contact[Qualifications]" value="Certificates other than the above">
+              <span>Certificates other than the above</span><br>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new  field_full field_with_text">
+              <label>Of the following categories, which BEST describes your current employment status?</label><br>
+              <select
+                id="of-the-following-categories-which-best-describes-your-current-employment-status"
+                name="contact[Of the following categories, which BEST describes your current employment status?]"
+              >
+                <option value="Full-time employee">Full-time employee</option>
+                <option value="Part-time employee">Part-time employee</option>
+                <option value="Self-employed not employing others">Self-employed not employing others</option>
+                <option value="Self-employed - employing others">Self-employed - employing others</option>
+                <option value="Employed Unpaid worker in a family business">
+                  Employed Unpaid worker in a family business
+                </option>
+                <option value="Unemployed seeking full-time work">Unemployed seeking full-time work</option>
+                <option value="Unemployed seeking part-time work">Unemployed seeking part-time work</option>
+                <option value="Not Employed not seeking employment">Not Employed not seeking employment</option>
+              </select>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new  field_full field_with_text">
+              <label
+                >Of the following categories, which BEST describes your main reason for undertaking this
+                course/traineeship/apprenticeship?</label
+              ><br>
+              <select
+                id="of-the-following-categories-which-best-describes-your-main-reason-for-undertaking-this-coursetraineeshipapprenticeship"
+                name="contact[Of the following categories, which BEST describes your main reason for undertaking this course/traineeship/apprenticeship?]"
+              >
+                <option value="To get a job">To get a job</option>
+                <option value="To develop my existing business">To develop my existing business</option>
+                <option value="To start my own business">To start my own business</option>
+                <option value="To try for a different career">To try for a different career</option>
+                <option value="To get a better job or promotion">To get a better job or promotion</option>
+                <option value="It was a requirement of my job">It was a requirement of my job</option>
+                <option value="I wanted extra skills for my job">I wanted extra skills for my job</option>
+                <option value="To get into another course of study">To get into another course of study</option>
+                <option value="For my personal interest or self-development">
+                  For my personal interest or self-development
+                </option>
+                <option value="To get skills for community/voluntary work">
+                  To get skills for community/voluntary work
+                </option>
+                <option value="Other reasons">Other reasons</option>
+              </select>
+            </div>
+          </div>
+          <div class="field_cols vsn_area hidden_field" style="display: none;">
+            <div class="field_new  field_full  ">
+              <label
+                >*Victorian Student Number (VSN) applies only to students who are under the age of 25 years and are
+                studying in the state of Victoria. Do you have a Victoria Student Number?</label
+              ><br>
+              <input
+                 type="radio"
+                name="contact[*Victorian Student Number (VSN) applies only to students who are under the age of 25 years and are studying in the state of Victoria. Do you have a Victoria Student Number?]"
+                value="Yes"
+                onclick="$('.have_vsn_yes').show(); $('.have_vsn_no').hide();"
+              >
+              <span>Yes</span><br>
+              <input
+                 type="radio"
+                name="contact[*Victorian Student Number (VSN) applies only to students who are under the age of 25 years and are studying in the state of Victoria. Do you have a Victoria Student Number?]"
+                value="No"
+                onclick="$('.have_vsn_yes').hide(); $('.have_vsn_no').show();"
+              >
+              <span>No</span><br>
+            </div>
+            <div class="field_new  field_full field_with_text have_vsn_yes" style="display: none;">
+              <label for="your-vsn-number">Your VSN Number</label>
+              <input    id="your-vsn-number" type="text" name="contact[Your VSN Number]">
+            </div>
+            <div class="field_new  field_full  have_vsn_no" style="display: none;">
+              <label>You have not provided your VSN because:</label><br>
+              <input
+                type="radio"
+                name="contact[You have not provided your VSN because]"
+                value="I am new to the Victoria Education System. I have never attended a school or  TAFE or other VET training provider in Victoria"
+              >
+              <span
+                >I am new to the Victoria Education System. I have never attended a school or TAFE or other VET training
+                provider in Victoria</span
+              ><br>
+              <input
+                type="radio"
+                name="contact[You have not provided your VSN because]"
+                value="I don’t have a VSN number"
+              >
+              <span>I don’t have a VSN number</span><br>
+              <input
+                 type="radio"
+                name="contact[You have not provided your VSN because]"
+                value="I don’t know my VSN number"
+              >
+              <span>I don’t know my VSN number</span><br>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new  field_full field_with_text">
+              <label for="what-make-and-model-of-pat-tester-will-you-be-using"
+                >What make and model of PAT Tester will you be using?</label
+              >
+              <input
+                 required
+                class="required"
+                id="what-make-and-model-of-pat-tester-will-you-be-using"
+                type="text"
+                name="contact[What make and model of PAT Tester will you be using?]"
+              >
+            </div>
+          </div>
+          <hr>
+          <div class="field_cols">
+            <div class="field_desc">
+              <h3>Unique Student Identifier - USI</h3>
+              <p>
+                From 1 January 2015, we (EXELTrain Pty Ltd) can be prevented from issuing you with a nationally
+                recognised VET qualification or statement of attainment when you complete your course if you do not have
+                a unique student identifier (USI). In addition, we are required to include your USI in the data we
+                submit to NCVER. If you have not yet obtained a USI,
+                <b
+                  ><a href="http://www.usi.gov.au/create-your-USI" target="_blank"
+                    >you can apply for it directly here to create one</a
+                  ></b
+                >
+                on your computer or mobile device. If you need further information on USI please visit www.usi.gov.au or
+                contact our office on 1300 848 302 during business hours. Please note that if you would like to specify
+                your gender as 'other' you will need to contact the USI office for assistance.
+              </p>
+            </div>
+            <div class="field_new  field_full field_with_text ">
+              <label for="please-enter-your-usi-number">Please enter your USI number:</label>
+              <input
+                required
+                class="required"
+                id="please-enter-your-usi-number"
+                type="text"
+                name="contact[Please enter your USI number]"
+              >
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new  field_full   ">
+              <input type="hidden" name="contact[  USI Search (if required)]" value="No">
+              <input
+                id="usi-search-if-required"
+                type="checkbox"
+                name="contact[  USI Search (if required)]"
+                value="Yes"
+              >
+              <label for="usi-search-if-required"> USI Search (if required)</label><br>
+              <p>
+                By ticking this box and signing this form you acknowledge that you are providing us with the permission
+                to search for your USI number if required. You will also be required to provide us with the necessary
+                details. Please note the USI search/locate function tool will activate a notification to your email
+                address or mobile of the student account holder which will include the name of our RTO (EXELTrain Pty
+                Ltd). For more information please visit this
+                <a
+                  href="https://www.usi.gov.au/training-organisations/using-usi-registry-system/existing-usi-search-locate-usi"
+                  target="_blank"
+                  >USI link</a
+                >.
+              </p>
+              <p>
+                For further information about Unique Student Identifiers, including access, correction and complaints,
+                go to the
+                <a href="https://www.usi.gov.au/about/privacy-and-unique-student-identifier" target="_blank"
+                  >USI website</a
+                >.
+              </p>
+            </div>
+          </div>
+          <hr>
+          <div class="field_cols">
+            <div class="field_desc">
+              <h3>Important Information</h3>
+              <p>
+                Testing and tagging is an activity that requires the handling and operation of electrical appliances
+                that could pose a risk to users if these items are in an unsafe condition. It is highly recommended that
+                the mains power supply used for this training course be protected by an electrically safe Residual
+                Current Device (RCD). A registered electrician can assist with testing your RCD for electrical safety.
+                Your trainer will instruct you on the safe and effective method of inspection and testing of these items
+                to check for electrical safety, however Test &amp; Tag Training<span style="caret-color: rgb(32, 33, 36); color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 14px;"
+                  >®</span
+                >&nbsp;accepts no liability for any injury or damage sustained as a result of this activity.
+              </p>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_new  field_full   ">
+              <label>Terms and Conditions</label><br>
+              <input
+                required
+                class="required"
+                type="checkbox"
+                id="I-have read and agree with the privacy statement and student declaration"
+                hidden-data="Terms-and Conditions"
+                onchange="fillHidden('Terms-and Conditions')"
+                value="I have read and agree with the privacy statement and student declaration"
+
+              ><label for="I-have read and agree with the privacy statement and student declaration"
+                >I have read and agree with the <a href="/pages/student-information">privacy statement and student declaration</a></label
+              ><br>
+              <input
+                required
+                class="required"
+                type="checkbox"
+                id="I-have read and agree to the enrolment privacy notice"
+                hidden-data="Terms-and Conditions"
+                onchange="fillHidden('Terms-and Conditions')"
+                value="I have read and agree to the enrolment privacy notice"
+
+              ><label for="I-have read and agree to the enrolment privacy notice"
+                >I have read and agree to the <a href="/pages/student-information">enrolment privacy notice</a></label
+              ><br>
+              <input
+                required
+                class="required"
+                type="checkbox"
+                id="I-have read and agree to the cancellation and refund policy"
+                hidden-data="Terms-and Conditions"
+                onchange="fillHidden('Terms-and Conditions')"
+                value="I have read and agree to the cancellation and refund policy"
+
+              ><label for="I-have read and agree to the cancellation and refund policy"
+                >I have read and agree to the <a href="/pages/refund-cancellations-policy">cancellation and refund policy</a></label
+                                                                                                          
+              ><br>
+              <input
+                required
+                class="required"
+                type="checkbox"
+                id="I-have read the terms and conditions"
+                hidden-data="Terms-and Conditions"
+                onchange="fillHidden('Terms-and Conditions')"
+                value="I have read the terms and conditions"
+
+              ><label for="I-have read the terms and conditions"
+                >I have read the <a href="/pages/student-information">terms and conditions</a></label
+              ><br>
+              <input type="hidden" id="Terms-and Conditions" name="contact[Terms and Conditions]">
+              <script>
+                function fillHidden(hiddenname) {
+                var checkboxes = document.querySelectorAll('[hidden-data="'+hiddenname+'"]');
+                var hiddenfield = document.getElementById(hiddenname);
+                hiddenfield.value = ""
+                var i;
+                for (i = 0; i < checkboxes.length; i++) {
+                  var x = checkboxes[i];
+                  if(x.checked){
+                    if(hiddenfield.value==""){
+                      hiddenfield.value = x.value;
+                      }else{
+                      hiddenfield.value = hiddenfield.value + ", " + x.value;
+                      }
+                    }
+                  }
+                }
+              </script>
+            </div>
+          </div>
+          <hr>
+          <div class="field_cols">
+            <div class="field_desc">
+              <h3>Student Declaration and Consent</h3>
+            </div>
+            <div class="field_cols">
+              <div class="field_new  field_full   ">
+                <input
+                  type="hidden"
+                  name="contact[ I declare that the information I have provided to the best of my knowledge is true and correct. I consent to the collection, use and disclosure of my personal information in accordance with the Privacy Notice.]"
+                  value="No"
+                >
+                <input
+                  id="i-declare-that-the-information-i-have-provided-to-the-best-of-my-knowledge-is-true-and-correct-i-consent-to-the-collection-use-and-disclosure-of-my-personal-information-in-accordance-with-the-privacy-notice"
+                  required
+                  class="required"
+                  type="checkbox"
+                  name="contact[ I declare that the information I have provided to the best of my knowledge is true and correct. I consent to the collection, use and disclosure of my personal information in accordance with the Privacy Notice.]"
+                  value="Yes"
+                >
+                <label for="i-declare-that-the-information-i-have-provided-to-the-best-of-my-knowledge-is-true-and-correct-i-consent-to-the-collection-use-and-disclosure-of-my-personal-information-in-accordance-with-the-privacy-notice">
+                  I declare that the information I have provided to the best of my knowledge is true and correct. I
+                  consent to the collection, use and disclosure of my personal information in accordance with the
+                  Privacy Notice.</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_desc">
+              <h3>Electronic Signature</h3>
+            </div>
+            <div class="field_new    field_with_text  ">
+              <label for="students-full-name">Student's Full Name</label>
+              <input
+                required
+                class="required"
+                id="students-full-name"
+                type="text"
+                name="contact[Student's Full Name]"
+              >
+            </div>
+            <div class="field_new   field_with_text   ">
+              <label for="todays-date">Today's Date</label>
+              <input required class="required" id="todays-date" type="text" name="contact[Today's Date]">
+            </div>
+          </div>
+          <div class="field_cols">
+            <div class="field_desc">
+              <h3>Parent / Guardian Signature</h3>
+              <p>Parental/guardian consent is required for all students under the age of 18.</p>
+            </div>
+            <div class="field_new    field_with_text  ">
+              <label for="parentguardian-full-name">Parent/Guardian Full Name</label>
+              <input
+                required
+                class="required"
+                id="parentguardian-full-name"
+                type="text"
+                name="contact[Parent/Guardian Full Name]"
+              >
+            </div>
+            <div class="field_new   field_with_text   ">
+              <label for="todays-dates">Today's Date</label>
+              <input required class="required" id="todays-dates" type="text" name="contact[Today's Date]">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__button">
+        <button type="submit" class="button">
+          {{ 'templates.contact.form.send' | t }}
+        </button>
+      </div>
+    {%- endform -%}
+  </div>
+</div>
+  
+<script>
+ 
+</script>
+{% schema %}
+{
+  "name": "Students Information Form",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Contact form",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Students Information Form"
+    }
+  ]
+}
+{% endschema %}

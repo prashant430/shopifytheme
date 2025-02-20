@@ -1,0 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "video_BNP3cH": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/gTBvBb2Ua4c",
+        "cover_image": "shopify://shop_images/test-tag-microwave.jpg",
+        "description": "How to Test & Tag a Microwave",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_HFrtfQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<p>Testing a microwave is an item that often confuses people for a variety of reasons.</p>\n<p>For starters, our discussion specifically refers to measuring the electrical leakage (differential leakage) of the microwave, not the microwave emissions (<a href=\"/pages/test-microwave-leakage\">microwave leakage</a>). These two tests are distinctly different, but are often confused together.</p>\n<p>For the latter, you would normally use a microwave leakage tester and microwave leakage tags.</p>\n<p>It's also important to ensure you're running the right test. Most people only measure the earth continuity and insulation of the microwave, when in fact they 'should' be measuring the leakage current as per AS/NZS 3760.</p>\n<h3>\"If the equipment must be energised to close or operate a switching device in order to test insulation, then the leakage current test in accordance with Appendix E shall be performed.\" - <em>AS/NZS 3760 (2.3.3.2)</em></h3>\n<p>While you visually inspect the microwave, it’s important you check the doors and seals and that the power supply lead is secure. You’ll potentially need to physically move the microwave to conduct a proper visual inspection.</p>\n<h3>Main points to remember:</h3>\n<ul>\n<li>A microwave is an earthed appliance</li>\n<li>Connecting the earth return lead to a painted piece of metal won’t give you accurate readings (attach it to a screw instead)</li>\n<li>Place a mug of water in the microwave while it’s being powered</li>\n<li>Perform a Leakage Current test (time will need to be increased above 5 seconds)</li>\n<li>While the Leakage test is in operation, program the microwave to start</li>\n</ul>\n<table class=\"prev-next\">\n<tbody>\n<tr>\n<td><a href=\"/pages/test-tag-3-phase-appliance\">&lt;&lt; Test and Tag a 3 Phase Appliance</a></td>\n<td class=\"right\"><a href=\"/pages/test-microwave-leakage\">How to test for Microwave Leakage &gt;&gt;</a></td>\n</tr>\n</tbody>\n</table>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_BNP3cH",
+    "custom_liquid_HFrtfQ"
+  ]
+}

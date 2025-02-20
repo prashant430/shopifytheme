@@ -1,0 +1,85 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 16
+      }
+    },
+    "collapsible_content_3MhTze": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_7gDGfJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Disclaimer",
+            "icon": "none",
+            "row_content": "<p>Test & Tag Training does not warrant, guarantee or make any representations regarding the currency, correctness, accuracy, reliability, or any other aspect regarding characteristics or use of the information presented in the service and/or links thereto and expressly disclaims liability for errors and omissions in the contents of this website.<br/><br/>The user accepts sole responsibility and risk associated with the use of the material on this service, irrespective of the purpose to which such use or results are applied.<br/><br/>In no event shall Test & Tag Training be liable for any special, indirect or consequential damages or any damages whatsoever resulting from loss of use, data or profits, whether in an action contract, negligence or tort, arising out of or in connection with the use or performance of materials on this service.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zH9iTP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Privacy Policies",
+            "icon": "none",
+            "row_content": "<p>When you visit the Test & Tag Training website, the following information is automatically collected for statistical purposes:    </p><ul><li>Your server address (IP)</li><li>Your top-level domain name (for example .com, .net, .org, etc)</li><li>The pages you accessed and documents downloaded</li><li>The previous site you have visited</li><li>The type of browser you are using.<br/><br/>Additional information may be voluntarily supplied through on-line forms and e-mail for specific purposes.<br/><br/>Test & Tag Training will only use such information for the purpose for which it was supplied, and such information will not be disclosed to any third party without your consent or unless required by law.<br/><br/>This website uses the Google Ads remarketing service to advertise on third party websites (including Google) to previous visitors on our site. It could mean that we advertise to previous visitors who haven't completed a task on our site. This could be in the form of an advertisement on the Google search results page, or a site in the Google Display Network using DoubleClick.<br/><br/>Third-party vendors, including Google, use cookies to serve ads based on someone’s past visits to the Test & Tag Training website. Of course, any data collected will be used in accordance with our own privacy policy and <a href=\"https://myadcenter.google.com/home\" title=\"Google's privacy policy\">Google's privacy policy</a>.<br/><br/>You can set preferences on how Google advertises to you using the Google Ad Preferences Page.<br/><br/>Personal information is information or an opinion about an individual whose identity is apparent or can be reasonably ascertained from that information or opinion. Personal information we may collect from you includes, without limitation, your name, address, email address, telephone number(s) and date of birth.</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tAtcy8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Copyright",
+            "icon": "none",
+            "row_content": "<p>Test & Tag Training materials, including site design, pages, documents and online graphics, are the sole property of Test & Tag Training and are protected under applicable copyrights, trademarks and other proprietary (including but not limited to intellectual property) rights.<br/><br/>Copyright of Test & Tag Training materials resides with Test & Tag Training.<br/><br/>Apart from any fair dealing for the purposes of study, research, criticism and review, as permitted under copyright legislation, no part of these services may be reproduced, re-used or redistributed for any purpose whatsoever, or distributed to a third party for such purpose, without written permission from the management of Test & Tag Training.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_kjUAdA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cookies",
+            "icon": "none",
+            "row_content": "<p>Cookies are alphanumeric identifiers that we transfer to your computer's hard drive through your web browser to enable our systems to recognise your browser and to provide enhanced features.<br/><br/>The \"help\" portion of the toolbar on most browsers will tell you how to prevent your browser from accepting new cookies, how to have the browser notify you when you receive a new cookie, or how to disable cookies altogether. <br/><br/>The cookies that we use enable us to:<br/><br/></p><ul><li>measure your usage of the website</li><li>measure the performance of the website</li><li>understand what interests you when you are browsing the website</li></ul><p>Google and third-party vendor’s cookies:</p><ul><li>Third-party vendors, including Google, show our ads on sites on the internet.</li><li>Google uses cookies to serve ads to you based on your prior visits to our website.</li><li>You may opt out of Google's use of cookies by visiting the Google advertising opt-out page.</li></ul><p>(Alternatively, you can visit the Network Advertising Initiative opt-out page to opt out of a third-party vendor's use of cookies.)<br/><br/>This website uses Google Analytics, a web analytics service provided by Google, Inc. (\"Google\"). Google Analytics uses \"cookies\", which are text files placed on your computer, to help the website analyze how users use the site. The information generated by the cookie about your use of the website (including your IP address) will be transmitted to and stored by Google on servers in the United States.<br/><br/>Google will use this information for the purpose of evaluating your use of the website, compiling reports on website activity for website operators and providing other services relating to website activity and internet usage. Google may also transfer this information to third parties where required to do so by law, or where such third parties process the information on Google's behalf. Google will not associate your IP address with any other data held by Google. You may refuse the use of cookies by selecting the appropriate settings on your browser. By using this website, you consent to the processing of data about you by Google in the manner and for the purposes set out above.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_7gDGfJ",
+        "collapsible_row_zH9iTP",
+        "collapsible_row_tAtcy8",
+        "collapsible_row_kjUAdA"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_3MhTze"
+  ]
+}

@@ -1,0 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "video_BNP3cH": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/5JneS7Zt5Gc",
+        "cover_image": "shopify://shop_images/test-tag-kettle.jpg",
+        "description": "How to Test and Tag a Kettle",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_HFrtfQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<p>In order to Test and Tag a kettle correctly, it's important you understand that different kettle models might require you to alter the way you test it. Some will have a jug that fits into a base plate (still considered one item), while others will have a jug on its own that is connected to an IEC lead.</p>\n<p>\n<p>It's worth mentioning that the base doesn't need to be tested seperately, as it can only be used with that kettle. This means the jug and kettle are tested as one appliance.</p>\n<p><strong>What this means is that you'll either be:</strong></p>\n<ol>\n<li>Connecting the kettle to the PAT tester via an IEC lead, or</li>\n<li>Connecting the return clip to the element inside the kettle</li>\n</ol>\n<h2>The Test and Tag Process</h2>\n<p>Once you have completed the visual inspection of the kettle, it's important to ensure there's no water on the element before you start the electrical test.</p>\n<p>If you're testing a kettle that requires you to place the return lead directly on the element, avoid placing it on areas of noticeably high mineral build-up as this could affect your results. For kettles that have IEC leads, you won't need to worry about touching any exposed metal parts. Instead, all you need to do is connect the lead to the Portable Appliance Tester.</p>\n<p>Once the kettle is plugged into your Portable Appliance Tester:</p>\n<ul>\n<li>Switch the kettle ON</li>\n<li>Perform a Class I Test</li>\n<li>This will include an Earth Bond and Insulation Resistance Test</li>\n</ul>\n<p>Please note: for demonstrative purposes, our video highlights how to test and tag one particular type of kettle.</p>\n<p>We also provide other helpful videos on how to test and tag common kitchen appliances, such as testing a tagging a <a href=\"/pages/test-tag-microwave\">microwave</a>, <a href=\"/pages/test-tag-toaster\">toaster</a> and <a href=\"/pages/test-tag-fridge\">fridge</a>.</p>\n<table class=\"prev-next\">\n<tbody>\n<tr>\n<td><a href=\"/pages/test-tag-computer\">&lt;&lt; How to Test and Tag a Computer</a></td>\n<td class=\"right\"><a href=\"/pages/test-tag-laptop\">How to Test and Tag a Laptop &gt;&gt;</a></td>\n</tr>\n</tbody>\n</table>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_BNP3cH",
+    "custom_liquid_HFrtfQ"
+  ]
+}

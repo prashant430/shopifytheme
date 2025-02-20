@@ -1,0 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "video_BNP3cH": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/37K8ohbquGg",
+        "cover_image": "shopify://shop_images/test-tag-vacuum-cleaner.jpg",
+        "description": "How to Test and Tag a Vacuum Cleaner",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_HFrtfQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<p>In the test and tag field, a vacuum cleaner is undoubtedly one of the most common appliances you’ll come across. It’s also relatively simple to test, but it does in fact require some base knowledge of how motors should be tested in accordance with AS/NZS 3760.</p>\n<p>This appliance will give you the choice between conducting an insulation test or leakage current test. Most notably, the Australian Standards state:</p>\n<h3>\"For equipment that contains single phase motors the leakage current test is the preferred option.\" <em>- AS/NZS 3760:2010</em></h3>\n<p>The reason why a leakage current test is the favoured option is because it has a higher chance of finding a detectable fault when compared to the insulation test. Although you can technically perform either test, we recommend you perform both of these tests, as this is considered \"best practice\".</p>\n<h3>Mains points to remember:</h3>\n<ul>\n<li>Visual inspection: the lead is the most common area to find faults, as is the point where the cable meets the vacuum cleaner (if it contains an internal reel – pull out the cable)</li>\n<li>Vacuum cleaners are generally double insulated appliances</li>\n<li>Don't assume that because it has an earthed pin, that it will necessarily be an earthed appliance</li>\n</ul>\n<table class=\"prev-next\">\n<tbody>\n<tr>\n<td><a href=\"/pages/test-tag-laptop\">&lt;&lt; How to Test and Tag a Laptop</a></td>\n<td class=\"right\"><a href=\"/pages/test-tag-3-phase-appliance\">Test and Tag a 3 Phase Appliance &gt;&gt;</a></td>\n</tr>\n</tbody>\n</table>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_BNP3cH",
+    "custom_liquid_HFrtfQ"
+  ]
+}

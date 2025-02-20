@@ -1,0 +1,518 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "map_popup_3Fm3zd": {
+      "type": "map-popup",
+      "blocks": {
+        "text_bFVeWN": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Rowville</h3><p>Test & Tag Training Head Office, 8 Mosrael Place,<br/>Rowville, VIC 3023</p>",
+            "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.007437966663!2d145.23758837505642!3d-37.9068888393646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63de9ce44471d%3A0x9eaed9807bfff2bc!2s8%20Mosrael%20Pl%2C%20Rowville%20VIC%203178%2C%20Australia!5e0!3m2!1sen!2sus!4v1708676725037!5m2!1sen!2sus\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"",
+            "button_text_color": "#58a618",
+            "button_text": "View on Map >>",
+            "button_background_color": "#f9f9f9"
+          }
+        },
+        "text_yrJqzr": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Caroline Springs</h3><p>Punthill Caroline Springs, 1-7 Caroline Springs Boulevard,<br/>Caroline Springs, VIC 3023</p>",
+            "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.5442959615134!2d144.7370065750467!3d-37.75383383061395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6f5bf56aa6917%3A0x77b024ec9dc0af6c!2sPunthill%20Apartment%20Hotels%20%7C%20Caroline%20Springs!5e0!3m2!1sen!2sus!4v1708676774270!5m2!1sen!2sus\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"",
+            "button_text_color": "#58a618",
+            "button_text": "View on Map >>",
+            "button_background_color": "#f9f9f9"
+          }
+        }
+      },
+      "block_order": [
+        "text_bFVeWN",
+        "text_yrJqzr"
+      ],
+      "settings": {}
+    },
+    "featured_product_yLgCHj": {
+      "type": "featured-product",
+      "blocks": {
+        "title_Dw74XF": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "text_wK7gnp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "This course offers the highest qualification available in Victoria and provides you with all the skills and competencies required to begin testing and tagging.",
+            "text_style": "body"
+          }
+        },
+        "custom_liquid_9tWJ3T": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"small\"><img src=\"https://cdn.shopify.com/s/files/1/0861/8482/1048/files/NRT-LOGO-small-1.jpg?v=1732759917\" class=\"no-border\" style=\"float: right; margin-left: 20px;\" alt=\"Registered Training Organisation\" width=\"100\" height=\"82\" loading=\"lazy\">Our Nationally Recognised course offers the highest qualification available in Victoria and provides you with all the skills and competencies required to begin testing and tagging.</p>"
+          }
+        },
+        "price_GzqnDH": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_JTVTQJ": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector_fHcnNr": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_eJJPxX": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_mFxc6N": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "title_Dw74XF",
+        "text_wK7gnp",
+        "custom_liquid_9tWJ3T",
+        "price_GzqnDH",
+        "variant_picker_JTVTQJ",
+        "quantity_selector_fHcnNr",
+        "buy_buttons_eJJPxX",
+        "share_mFxc6N"
+      ],
+      "settings": {
+        "product": "face-to-face-course-vic",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_grAm8b": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Xi9ABA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Online Test & Tag Course",
+            "heading_size": "h1"
+          }
+        },
+        "text_VgLACp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This course is your online alternative and contains exactly the same information and resources as our face-to-face course.<br/><br/>It's the only Nationally Recognised Test & Tag Course in Australia that is solely taught online.<br/><br/>The course offers a fully immersive and interactive test and tag training experience through our easy-to-use online learning platform in a virtual classroom.<br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_7wJXKb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Enrol Now",
+            "button_link": "shopify://products/online-test-tag-course",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Xi9ABA",
+        "text_VgLACp",
+        "button_7wJXKb"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/online-test-and-tag-course_0a200708-3f86-4448-9369-1fffb232f333.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_tY3jpj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DdiqC9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Face-to-Face Test & Tag Course",
+            "heading_size": "h1"
+          }
+        },
+        "text_WAamtC": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Costs:</strong> \t$495 GST Exempt<br/><strong>Duration: </strong>1 day face-to-face (8-9 hours), plus online WHS component (3-4 hours)<br/><strong>VIC Locations: </strong>Rowville & Caroline Springs<br/><strong>Qualifications Received:</strong> Statements of Attainment & ID card with Certificate no.<br/><strong>Qualification Level: </strong>Highest level (ASQA approved)<br/><strong>Electrical knowledge: </strong>No previous electrical knowledge or background is required</p>",
+            "text_style": "body"
+          }
+        },
+        "button_RTAbYh": {
+          "type": "button",
+          "settings": {
+            "button_label": "Enrol Now",
+            "button_link": "/products/face-to-face-course-vic",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_DdiqC9",
+        "text_WAamtC",
+        "button_RTAbYh"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/face_to_face_test_and_tag_course_a2eb27d0-d305-47f4-818c-184c008183eb.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_DMKGd8": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_hkQypx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Rowville / Head Office",
+            "icon": "none",
+            "row_content": "<p>8 Mosrael Place, Rowville, VIC 3178</p><p>View on Map &gt;&gt;</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qxNgkj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Caroline Springs",
+            "icon": "none",
+            "row_content": "<p>Punthill Caroline Springs, 1-7 Caroline Springs Boulevard, Caroline Springs, VIC 3023<br/><br/>View on Map &gt;&gt;</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_hkQypx",
+        "collapsible_row_qxNgkj"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_Cj3VRN": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_eVzEKq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Online Test & Tag Course",
+            "heading_size": "h1"
+          }
+        },
+        "text_NUPLHb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Costs:</strong> $495.00 GST Exempt <br/><strong>Duration: </strong>1 day over Zoom, plus online WHS component (3-4 hours)<br/><strong>Learning Style: </strong>Online Learning Module & Virtual Classroom (via Zoom)<br/><strong>Qualifications Received: </strong>Statements of Attainment & ID card with Certificate no.<br/><strong>Qualification Level: </strong>Highest level (ASQA approved)<br/><strong>Electrical knowledge:</strong> No previous electrical knowledge or background is required<br/><strong>Virtual Classroom Times: </strong>Run throughout the week at various times</p>",
+            "text_style": "body"
+          }
+        },
+        "button_BBFaBQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Enrol Now",
+            "button_link": "shopify://products/online-test-tag-course",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_eVzEKq",
+        "text_NUPLHb",
+        "button_BBFaBQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/online_test_and_tag_course.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_AFe3Xb": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<!-- TrustBox widget - Mini Carousel -->\n<div class=\"trustpilot-widget\" data-locale=\"en-AU\" data-template-id=\"539ad0ffdec7e10e686debd7\" data-businessunit-id=\"56bab5e20000ff000588b9fa\" data-style-height=\"350px\" data-style-width=\"100%\" data-stars=\"1,2,3,4,5\" data-review-languages=\"en\">\n  <a href=\"https://au.trustpilot.com/review/testandtagtraining.com.au\" target=\"_blank\" rel=\"noopener\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget -->",
+        "color_scheme": "",
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_xMxdAk": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fMJGLz": {
+          "type": "column",
+          "settings": {
+            "title": "Rowville",
+            "text": "<p>Test & Tag Training Head Office, 8 Mosrael Place,</p><p>Rowville, VIC 3023<br/><br/>View on Map &gt;&gt;</p>",
+            "link_label": "",
+            "link": "",
+            "button_text_color_4": "#000000",
+            "button_text_4": "View Map"
+          }
+        },
+        "column_BTF4TY": {
+          "type": "column",
+          "settings": {
+            "title": "Caroline Springs",
+            "text": "<p>Punthill Caroline Springs, 1-7 Caroline Springs Boulevard,</p><p> Caroline Springs, VIC 3023<br/><br/>View on Map &gt;&gt;</p>",
+            "link_label": "",
+            "link": "",
+            "button_text_color_4": "#000000",
+            "button_text_4": "View Map"
+          }
+        }
+      },
+      "block_order": [
+        "column_fMJGLz",
+        "column_BTF4TY"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "map_url_4": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22480.24191528294!2d-122.41941533333334!3d37.77492949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807f7b606e5d%3A0x64bf9bcb39065fb3!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1647347969693!5m2!1sen!2sus",
+        "map_url_5": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22480.24191528294!2d-122.41941533333334!3d37.77492949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807f7b606e5d%3A0x64bf9bcb39065fb3!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1647347969693!5m2!1sen!2sus"
+      }
+    },
+    "collapsible_content_tx4qNV": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_qjCxei": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Online Test & Tag Course",
+            "icon": "none",
+            "row_content": "",
+            "page": "online-course-vic"
+          }
+        },
+        "collapsible_row_84jtBz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Face-to-Face Test & Tag Course",
+            "icon": "none",
+            "row_content": "",
+            "page": "face-to-face-vic"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_qjCxei",
+        "collapsible_row_84jtBz"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "Test & Tag Courses",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_dUVA3c": {
+      "type": "video",
+      "settings": {
+        "heading": "What to Expect on Your Course Day",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/ufJJ9RHOxBs",
+        "cover_image": "shopify://shop_images/fast-to-face-test-tag-course-video.jpg",
+        "description": "Test & Tag Training VIC",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_kYWHjF": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JHxhH9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet Our VIC Trainer",
+            "heading_size": "h2"
+          }
+        },
+        "text_aRVGTQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Test & Tag Training Courses in Victoria are run by our highly experienced resident trainer, Mark Juric. Mark has more than 20 <br/>years of experience in the electrotechnology industry and comes with a <br/>strong background in teaching. Mark has extensive working experience and<br/> knowledge of the test and tag standards in Australia.</p><p>If you're planning on taking our course at Caroline Springs or Rowville, Mark will be the trainer conducting the <a href=\"https://ttt-au.myshopify.com/products/face-to-face-course-vic\" title=\"https://ttt-au.myshopify.com/products/face-to-face-course-vic\">face-to-face Test & Tag Training Course</a>. Mark also teaches our <a href=\"/products/online-test-tag-course\" title=\"Online Test & Tag Courses\">online Test & Tag training Course</a>, which is run via a Virtual Classroom.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_wEbk3k": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JHxhH9",
+        "text_aRVGTQ",
+        "button_wEbk3k"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/mark.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_xfWneb": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Test & Training Courses",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "test-tag-training-courses",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "map_popup_3Fm3zd",
+    "featured_product_yLgCHj",
+    "image_with_text_grAm8b",
+    "image_with_text_tY3jpj",
+    "collapsible_content_DMKGd8",
+    "image_with_text_Cj3VRN",
+    "custom_liquid_AFe3Xb",
+    "multicolumn_xMxdAk",
+    "collapsible_content_tx4qNV",
+    "video_dUVA3c",
+    "image_with_text_kYWHjF",
+    "featured_collection_xfWneb"
+  ]
+}

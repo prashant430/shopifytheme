@@ -1,0 +1,375 @@
+<div class="page-width">
+<div class="map-popup-container">
+    {% for block in section.blocks %}
+  <div class="map-popup" map-src="{{ block.settings.map_url }}">
+    <p>{{ block.settings.text }}</p>
+    <p id="openModalButton1" class="map-button" style="color: {{ block.settings.button_text_color }}; background-color: {{ block.settings.button_background_color }}">{{ block.settings.button_text }}</p>
+    <div id="mapModal1" class="modal">
+      <span class="close">&times;</span>
+      <iframe class="modal-content" id="popupMap1" src="" frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+</div>
+
+{% schema %}
+{
+  "name": "Map Popup2",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name":"Map block",
+      "settings": [
+   {
+      "type": "richtext",
+      "id": "text",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "richtext"
+    },
+    {
+      "type": "liquid",
+      "id": "map_url",
+      "label": "Map URL",
+      "default": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22480.24191528294!2d-122.41941533333334!3d37.77492949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807f7b606e5d%3A0x64bf9bcb39065fb3!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1647347969693!5m2!1sen!2sus"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "View Map"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Button Background Color",
+      "default": "#ffffff",
+      "info": "Please enter a valid CSS color value for the button background."
+    }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Map2"
+    }
+  ]
+}
+{% endschema %}
+
+
+<style>
+  /* CSS for the modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .modal-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; /* Adjust modal width as needed */
+    height: 50%; /* Adjust modal height as needed */
+  }
+
+  .close {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #ccc;
+    cursor: pointer;
+  }
+
+  .map-popup-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin: 30px 0px;
+    gap: 30px;
+  }
+
+  .map-popup {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 0 0 calc(33.33% - 30px);
+    max-width: calc(33.33% - 30px);
+  }
+
+  .map-button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+  .map-popup-container{
+    gap:0;
+  }
+  .map-popup {
+    background-color: #f9f9f9;
+    margin: 10px 0px;
+    padding: 20px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  }
+</style>
+
+<script>
+</script>
+
+
+
+{% comment %}
+
+  <div class="map-popup">
+    <p>{{ section.settings.text }}</p>
+    <p id="openModalButton1" class="map-button" style="color: {{ section.settings.button_text_color }}; background-color: {{ section.settings.button_background_color }}">{{ section.settings.button_text }}</p>
+    <div id="mapModal1" class="modal">
+      <span class="close">&times;</span>
+      <iframe class="modal-content" id="popupMap1" src="" frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <div class="map-popup">
+    <p>{{ section.settings.text_2 }}</p>
+    <p id="openModalButton2" class="map-button" style="color: {{ section.settings.button_text_color_2 }}; background-color: {{ section.settings.button_background_color }}">{{ section.settings.button_text_2 }}</p>
+    <div id="mapModal2" class="modal">
+      <span class="close">&times;</span>
+      <iframe class="modal-content" id="popupMap2" src="" frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="map-popup">
+  <p>{{ section.settings.text_3 }}</p>
+  <p id="openModalButton3" class="map-button" style="color: {{ section.settings.button_text_color_3 }}; background-color: {{ section.settings.button_background_color_3 }}">{{ section.settings.button_text_3 }}</p>
+  <div id="mapModal3" class="modal">
+    <span class="close">&times;</span>
+    <iframe class="modal-content" id="popupMap3" src="" frameborder="0" style="border:0;" allowfullscreen></iframe>
+  </div>
+</div>
+    <div class="map-popup">
+  <p>{{ section.settings.text_4 }}</p>
+  <p id="openModalButton4" class="map-button" style="color: {{ section.settings.button_text_color_4 }}; background-color: {{ section.settings.button_background_color_4 }}">{{ section.settings.button_text_4 }}</p>
+  <div id="mapModal4" class="modal">
+    <span class="close">&times;</span>
+    <iframe class="modal-content" id="popupMap4" src="" frameborder="0" style="border:0;" allowfullscreen></iframe>
+  </div>
+</div>
+
+//     var openModalButton1 = document.getElementById('openModalButton1');
+//     var modal1 = document.getElementById('mapModal1');
+//     var modalMap1 = document.getElementById('popupMap1');
+//     var closeButton1 = modal1.getElementsByClassName('close')[0];
+
+//     openModalButton1.addEventListener('click', function() {
+//       modal1.style.display = 'block';
+//       modalMap1.src = '{{ section.settings.map_url }}';
+//     });
+
+//     closeButton1.addEventListener('click', function() {
+//       modal1.style.display = 'none';
+//     });
+
+//     window.onclick = function(event) {
+//       if (event.target == modal1) {
+//         modal1.style.display = 'none';
+//       }
+//     };
+
+//     var openModalButton2 = document.getElementById('openModalButton2');
+//     var modal2 = document.getElementById('mapModal2');
+//     var modalMap2 = document.getElementById('popupMap2');
+//     var closeButton2 = modal2.getElementsByClassName('close')[0];
+
+//     openModalButton2.addEventListener('click', function() {
+//       modal2.style.display = 'block';
+//       modalMap2.src = '{{ section.settings.map_url_2 }}';
+//     });
+
+//     closeButton2.addEventListener('click', function() {
+//       modal2.style.display = 'none';
+//     });
+
+//     window.onclick = function(event) {
+//       if (event.target == modal2) {
+//         modal2.style.display = 'none';
+//       }
+//     };
+//     var openModalButton3 = document.getElementById('openModalButton3');
+// var modal3 = document.getElementById('mapModal3');
+// var modalMap3 = document.getElementById('popupMap3');
+// var closeButton3 = modal3.getElementsByClassName('close')[0];
+
+// openModalButton3.addEventListener('click', function() {
+//   modal3.style.display = 'block';
+//   modalMap3.src = '{{ section.settings.map_url_3 }}';
+// });
+
+// closeButton3.addEventListener('click', function() {
+//   modal3.style.display = 'none';
+// });
+
+// window.onclick = function(event) {
+//   if (event.target == modal3) {
+//     modal3.style.display = 'none';
+//   }
+// };
+
+//     var openModalButton4 = document.getElementById('openModalButton4');
+// var modal4 = document.getElementById('mapModal4');
+// var modalMap4 = document.getElementById('popupMap4');
+// var closeButton4 = modal4.getElementsByClassName('close')[0];
+
+// openModalButton4.addEventListener('click', function() {
+//   modal4.style.display = 'block';
+//   modalMap4.src = '{{ section.settings.map_url_4 }}';
+// });
+
+// closeButton4.addEventListener('click', function() {
+//   modal4.style.display = 'none';
+// });
+
+// window.onclick = function(event) {
+//   if (event.target == modal4) {
+//     modal4.style.display = 'none';
+//   }
+// };
+
+
+    {
+      "type": "richtext",
+      "id": "text",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "richtext"
+    },
+    {
+      "type": "liquid",
+      "id": "map_url",
+      "label": "Map URL",
+      "default": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22480.24191528294!2d-122.41941533333334!3d37.77492949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807f7b606e5d%3A0x64bf9bcb39065fb3!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1647347969693!5m2!1sen!2sus"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "View Map"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Button Background Color",
+      "default": "#ffffff",
+      "info": "Please enter a valid CSS color value for the button background."
+    },
+    {
+      "type": "richtext",
+      "id": "text_2",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "richtext Part 2"
+    },
+    {
+      "type": "liquid",
+      "id": "map_url_2",
+      "label": "Map URL",
+      "default": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22480.24191528294!2d-122.41941533333334!3d37.77492949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807f7b606e5d%3A0x64bf9bcb39065fb3!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1647347969693!5m2!1sen!2sus"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color_2",
+      "label": "Button Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "button_text_2",
+      "label": "Button Text",
+      "default": "View Map"
+    },
+  {
+      "type": "richtext",
+      "id": "text_3",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "richtext Part 2"
+    },
+    {
+      "type": "liquid",
+      "id": "map_url_3",
+      "label": "Map URL",
+      "default": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22480.24191528294!2d-122.41941533333334!3d37.77492949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807f7b606e5d%3A0x64bf9bcb39065fb3!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1647347969693!5m2!1sen!2sus"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color_3",
+      "label": "Button Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "button_text_3",
+      "label": "Button Text",
+      "default": "View Map"
+    },
+      {
+      "type": "richtext",
+      "id": "text_4",
+      "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+      "label": "richtext Part 2"
+    },
+    {
+      "type": "liquid",
+      "id": "map_url_4",
+      "label": "Map URL",
+      "default": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22480.24191528294!2d-122.41941533333334!3d37.77492949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807f7b606e5d%3A0x64bf9bcb39065fb3!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1647347969693!5m2!1sen!2sus"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color_4",
+      "label": "Button Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "button_text_4",
+      "label": "Button Text",
+      "default": "View Map"
+    }
+
+{% endcomment %}
+
+
+

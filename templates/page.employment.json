@@ -1,0 +1,81 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collapsible_content_HPadXq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_RwaVr9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cert IV Trainer and Assessor",
+            "icon": "none",
+            "row_content": "<p>Are you a Trainer who enjoys making connections with students? Want to work within a supportive team and enjoy the versatility of both online and face to face training?<br/><br/>Our business is growing and that’s why we are looking for a ‘CERT IV Trainer and Assessor (TAE40116 or TAE40122)’ to jump in and join our close-knit team and grow your hours as we grow. Whether you are early on in your career or have plenty of experience under your belt, we would love to hear from you. The remuneration package will depend on the level at which you join us.<br/><br/>For more information, find out the benefits of being <a href=\"https://ttt-au.myshopify.com/pages/cert-iv-trainer-vacancy\" title=\"https://ttt-au.myshopify.com/pages/cert-iv-trainer-vacancy\">one of our trainers</a>.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_RwaVr9"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Current Vacancies",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "video_fkJgfQ": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/XaWZQc3CrOs",
+        "cover_image": "shopify://shop_images/employment-video.jpg",
+        "description": "Vacancies at Test & Tag Training",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_6Xbghc": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<h2>Our Core Values</h2>\n<h3>Customer Focus</h3>\n<ul>\n<li>We are focused on the customer, embracing new ideas that lead the way to better business.</li></ul>\n<h3>Trust</h3>\n<ul>\n<li>We are ethical and fair in all dealings, creating open and trusted relationships.</li>\n</ul>\n<h3>Accountable</h3>\n<ul>\n<li>We take ownership for our work and create the best results possible.</li>\n</ul>\n<h3>Professional</h3>\n<ul>\n<li>We are responsive and take pride in everything we do, without compromise.</li>\n</ul>\n<h3>Teamwork </h3>\n<ul>\n<li>We inspire and work as a team to deliver what we guarantee.</li>\n</ul>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_HPadXq",
+    "video_fkJgfQ",
+    "custom_liquid_6Xbghc"
+  ]
+}

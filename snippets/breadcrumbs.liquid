@@ -1,0 +1,85 @@
+{% unless template == 'index' or template == 'cart' or template == 'list-collections' %}
+<nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+  <a href="/" title="Home">Home</a>
+  {% if template contains 'page' %}    
+    {% if page.handle == 'test-tag-common-questions' or page.handle == 'test-and-tag-guide' or page.handle == 'portable-appliance-testers-guide' %} 
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/pages/testing-tagging-resources" title="Useful Testing &amp; Tagging Resources">Testing &amp; Tagging Resources</a>
+    {% endif %}
+    {% if page.handle == 'test-tag-extension-lead' or page.handle == 'test-tag-surge-protection-device' or page.handle == 'test-tag-usb-charger' or page.handle == 'test-tag-computer' or page.handle == 'test-tag-kettle' or page.handle == 'test-tag-laptop' or page.handle == 'test-tag-vacuum-cleaner' or page.handle == 'how-to-test-and-tag-a-coffee-machine' or page.handle == 'test-tag-3-phase-appliance' or page.handle == 'test-tag-microwave' or page.handle == 'test-microwave-leakage' or page.handle == 'test-tag-toaster' or page.handle == 'test-tag-ups' or page.handle == 'test-tag-fridge' or page.handle == 'test-tag-welder' or page.handle == 'test-tag-tv' or page.handle == 'test-tag-battery-charger' or page.handle == 'test-tag-iron' %}
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/pages/testing-tagging-resources" title="Useful Testing &amp; Tagging Resources">Testing &amp; Tagging Resources</a>
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/pages/test-and-tag-guide" title="'How to' Test &amp; Tag Guide">"How to" Test &amp; Tag Guide</a>
+    {% endif %}
+    {% if page.handle == 'changes-to-test-tag-standard' or page.handle == 'test-tag-intervals' or page.handle == 'is-test-tag-a-legal-requirement' or page.handle == 'test-and-tag-colours' or page.handle == 'what-is-test-tag' or page.handle == 'as-nzs-3760' or page.handle == '5-tips-for-starting-test-tag-business' or page.handle == 'does-new-equipment-need-to-be-tested-and-tagged' or page.handle == 'product-recalls' or page.handle == 'test-tags-complete-guide' or page.handle == 'which-test-tag' or page.handle == 'do-you-need-to-be-electrician-to-test-and-tag' or page.handle == 'can-you-test-tag-your-own-equipment' or page.handle == 'test-tag-visual-inspection-checklist' or page.handle == '3-reasons-to-use-custom-test-tags' or page.handle == 'test-tag-hire-equipment' or page.handle == 'test-tag-training-course-refresh' or page.handle == 'test-tag-mistakes-to-avoid' or page.handle == 'test-tag-industry-10-years' %}
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/pages/testing-tagging-resources" title="Useful Testing &amp; Tagging Resources">Testing &amp; Tagging Resources</a>
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/pages/test-tag-common-questions" title="Test and Tag Common Questions">Test &amp; Tag Common Questions</a>
+    {% endif %}
+    {% if page.handle == 'how-choose-portable-appliance-tester' or page.handle == 'calibrate-pat-tester' or page.handle == 'top-5-PAT-testers' or page.handle == 'deltapat3309-testing-options' or page.handle == '3-ways-keep-pat-tester-healthy' or page.handle == 'test-tag-printing-solutions' or page.handle == 'tech-advances-pat-testing' %}
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/pages/testing-tagging-resources" title="Useful Testing &amp; Tagging Resources">Testing &amp; Tagging Resources</a>
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/pages/portable-appliance-testers-guide" title="Portable Appliance Testers Guide">Portable Appliance Testers Guide</a>
+    {% endif %}
+    {% if page.handle == 'test-tag-regulations-vic' or page.handle == 'test-tag-regulations-nsw' or page.handle == 'test-tag-regulations-wa' or page.handle == 'test-tag-regulations-qld' or page.handle == 'test-tag-regulations-sa'  %}
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/pages/testing-tagging-regulations" title="Test and Tag Regulations">Test &amp; Tag Regulations</a>
+    {% endif %}
+    {% if page.handle == 'test-and-tag-course-vic' or page.handle == 'test-and-tag-course-nsw' or page.handle == 'test-and-tag-course-qld' or page.handle == 'test-and-tag-course-sa' or page.handle == 'test-and-tag-course-wa' %}
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/pages/locations" title="Test and Tag Training Locations">Locations</a>
+    {% endif %}
+    {% if page.handle == 'testing-tagging-construction' or page.handle == 'testing-tagging-medical-equipment' or page.handle == 'testing-tagging-aged-care' or page.handle == 'testing-second-hand-equipment' %}
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/pages/testing-tagging-by-industry" title="Testing and Tagging by Industry">Testing and Tagging by Industry</a>
+    {% endif %}
+    {% if page.handle == 'enrolment-privacy-notice-vic' or page.handle == 'enrolment-privacy-notice-other-states' %}
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/pages/student-information" title="Test and Tag Student Information">Student Information</a>
+    {% endif %}
+    <span aria-hidden="true">&rsaquo;</span>
+    <span>{{ page.title }}</span>
+  {% elsif template contains 'product' %}
+    {% if product.handle == 'face-to-face-course-wa' or product.handle == 'face-to-face-course-vic' or product.handle == 'face-to-face-course-qld' or product.handle == 'face-to-face-course-nsw' or product.handle == 'face-to-face-course-sa' %} 
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/products/face-to-face-test-tag-course" title="Face-to-Face Test & Tag Course">Face-to-Face Test & Tag Course</a>
+    {% endif %}
+    {% if collection.url %}
+      <span aria-hidden="true">&rsaquo;</span>
+      {{ collection.title | link_to: collection.url }}
+    {% endif %}
+    <span aria-hidden="true">&rsaquo;</span>
+    <span>{{ product.title }}</span>    
+  {% elsif template contains 'collection' and collection.handle %}
+    <span aria-hidden="true">&rsaquo;</span>
+    {% if current_tags %}
+      {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
+      {{ collection.title | link_to: url }}
+      <span aria-hidden="true">&rsaquo;</span>
+      <span>{{ current_tags | join: " + " }}</span>
+    {% else %}
+      <span>{{ collection.title }}</span>
+    {% endif %}
+  {% elsif template == 'blog' %}
+    <span aria-hidden="true">&rsaquo;</span>
+    {% if current_tags %}
+      {{ blog.title | link_to: blog.url }}
+      <span aria-hidden="true">&rsaquo;</span>
+      <span>{{ current_tags | join: " + " }}</span>
+    {% else %}
+    <span>{{ blog.title }}</span>
+    {% endif %}
+  {% elsif template == 'article' %}
+    <span aria-hidden="true">&rsaquo;</span>
+    {{ blog.title | link_to: blog.url }}
+    <span aria-hidden="true">&rsaquo;</span>
+    <span>{{ article.title }}</span>
+  {% else %}
+   <span aria-hidden="true">&rsaquo;</span>
+   <span>{{ page_title }}</span>
+  {% endif %}  
+  </nav>
+{% endunless %} 

@@ -1,0 +1,63 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "custom_liquid_j4eLtH": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<!-- TrustBox widget - List -->\n<div class=\"trustpilot-widget\" data-locale=\"en-AU\" data-template-id=\"539ad60defb9600b94d7df2c\" data-businessunit-id=\"56bab5e20000ff000588b9fa\" data-style-height=\"500px\" data-style-width=\"100%\" data-stars=\"4,5\" data-review-languages=\"en\">\n  <a href=\"https://au.trustpilot.com/review/testandtagtraining.com.au\" target=\"_blank\" rel=\"noopener\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget -->",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_h4bwpW": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<!-- TrustBox widget - List -->\n<div class=\"trustpilot-widget\" data-locale=\"en-AU\" data-template-id=\"539ad60defb9600b94d7df2c\" data-businessunit-id=\"56bab5e20000ff000588b9fa\" data-style-height=\"500px\" data-style-width=\"100%\" data-stars=\"1,2,3,4,5\" data-review-languages=\"en\">\n  <a href=\"https://au.trustpilot.com/review/testandtagtraining.com.au\" target=\"_blank\" rel=\"noopener\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget -->",
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 52
+      }
+    },
+    "featured_blog_gr79YX": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "heading": "The Latest Testing & Tagging News",
+        "heading_size": "h1",
+        "blog": "",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_j4eLtH",
+    "custom_liquid_h4bwpW",
+    "featured_blog_gr79YX"
+  ]
+}

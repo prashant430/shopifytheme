@@ -1,0 +1,75 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "video_BNP3cH": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/_1dHLyA4l2g?list=PL4GKoNx1Hare1vUTLz_eZfTXySzAi8wfi",
+        "cover_image": "shopify://shop_images/3Phase_Part_1.png",
+        "description": "Test and Tag a 3-Phase Appliance - Earth Bond & Insulation Resistance Test",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_HFrtfQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<h2>Leakage Test</h2>\n<p>We'll need to use our Portable Appliance Tester and Leakage Current Meter to conduct the test. A Leakage test is required if the appliance has electronic/magnetic switching (contactor blocks).</p>\n<p>For a PASS, you require:</p>\n<ul>\n<li>Leakage test has to be less than 5mA</li>\n</ul>\n<p>It's important to wait a few seconds for the number of your reading to level out. When disconnecting the system, ensure you do it in reverse by turning the meter off first, followed then by the appliance and mains power.</p>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "video_q3TD9a": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/JOUIAaYQnZc?list=PL4GKoNx1Hare1vUTLz_eZfTXySzAi8wfi",
+        "cover_image": "shopify://shop_images/3Phase_Part_2.png",
+        "description": "Test and Tag a 3 Phase Appliance - Leakage Test",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_6W8Rgy": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<p>If you're needing help choosing the right 3 Phase testing equipment, please contact us on <a href=\"tel:1300848302\">1300 848 302</a>.</p>\n<table class=\"prev-next\">\n<tbody>\n<tr>\n<td><a href=\"/pages/test-tag-vacuum-cleaner\">&lt;&lt; How to Test and Tag a Vacuum Cleaner</a></td>\n<td class=\"right\"><a href=\"/pages/test-tag-microwave\">How to Test and Tag a Microwave &gt;&gt;</a></td>\n</tr>\n</tbody>\n</table>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_BNP3cH",
+    "custom_liquid_HFrtfQ",
+    "video_q3TD9a",
+    "custom_liquid_6W8Rgy"
+  ]
+}

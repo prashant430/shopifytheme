@@ -1,0 +1,50 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "video_EydDA9": {
+      "type": "video",
+      "custom_css": [],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/YNAvFEVxscQ?rel=0",
+        "cover_image": "shopify://shop_images/calibrate-pat-tester-video-cover.jpg",
+        "description": "Do I Need To Calibrate My PAT Tester Regularly?",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_mfDmAx": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<p>Just as your car requires a service periodically, your PAT tester requires maintenance to ensure it is working as it should. If a PAT tester isn't calibrated properly, results will often become skewed and the tester will pass items that should be failing and vice-versa.</p>\n<p>\nFor example, when performing tests on Class II appliances - as the values are so small to begin with, a small discrepancy in the results could mean the difference between an item passing or failing incorrectly. There's a huge number of reasons as to why this occurs, from general wear and tear, internal and external damage or simply a component defect. Regardless, there's no way of knowing if the values are correct without it being checked periodically.</p>\n<h2>How often does a PAT Tester need to be Calibrated?</h2>\n<p>The AS/NZS 3760 standard states that regular intervals are required to ensure your PAT tester is working accurately. In saying this, the general consensus is that Test & Tag Machines will basically require a calibration <strong>every 12 months</strong>, regardless of what type of tester you use. It also states this in the <a href=\"/pages/as-nzs-3760\">Australian Standard AS/NZS 3760</a>.</p>\n<p>It's also according to our test and tag experts one of our top 3 ways to ensure your Test & Tag Machine stays healthy for the long haul. It usually takes about five business days to have a tester calibrated, so it's certainly worth taking the time to ensure your results are correct.</p>\n<p>We <a href=\"https://www.portableappliancetesters.com.au/PATcalibration\">calibrate all tester brands</a> at Appliance Testing Supplies - you can have it booked in under 2 minutes. Once completed you'll receive a calibration certificate which confirms it has been calibrated in accordance to manufacturer instructions.</p>\n<h2>What happens during the Calibration Process?</h2>\n<p>Once we receive your appliance tester, we'll start running it through a variety of tests to make sure it's working properly. For instance, we check all of the functions of the tester against known (also calibrated) values and then adjustments are made where necassary to restore the tester to the correct values.</p>\n<p>It's also a really good opportunity to get the latest firmware loaded (if applicable) which can offer faster operation. Lastly, the calibration warning message which displays on the PAT tester can now also be removed or reset.</p>\n<p>During the entire process, we keep you updated every step of the way and once completed it usually takes 3-7 business days to get your tester back.</p>\n<table class=\"prev-next\">\n<tbody>\n<tr>\n<td><a href=\"/pages/top-5-PAT-testers\">&lt;&lt; Top 5 PAT Testers 2024</a></td>\n<td class=\"right\"><a href=\"/pages/deltapat3309-testing-options\">Metrel DeltaPAT 3309 BT Testing Options  &gt;&gt;</a></td>\n</tr>\n</tbody>\n</table>\n</div>",
+        "color_scheme": "",
+        "padding_top": 16,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_EydDA9",
+    "custom_liquid_mfDmAx"
+  ]
+}
